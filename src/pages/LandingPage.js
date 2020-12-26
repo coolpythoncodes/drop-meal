@@ -16,14 +16,16 @@ const LandingPage = () => {
 
     return (
         <>
-            <NavBar>  
-                {
-                 <NavLinks 
-                    deviceWidth={deviceWidth} 
-                    breakPoint={breakPoint}
-                />
-                }
-            </NavBar>
+            <section className="showcase">
+                <NavBar>  
+                    {
+                    <NavLinks 
+                        deviceWidth={deviceWidth} 
+                        breakPoint={breakPoint}
+                    />
+                    }
+                </NavBar>
+            </section>
 
             
         </>
