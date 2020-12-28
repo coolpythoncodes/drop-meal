@@ -3,5 +3,66 @@
 .showcase{
     height: 100vh;
     background: #000;
-    margin: 0;
+
+
+    &-text{
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
+        width: #{"min(90%, 512px)"};
+        margin: 135px auto 0 auto;
+        
+        h1{
+            color: #FCFBFB;
+            font-weight: bold;
+            font-size: 64px;
+            letter-spacing: 0.015em;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .sub-title{
+            font-family: Mulish;
+            font-weight: 400;
+            font-size: 24px;
+            letter-spacing: 0.015em;
+            color: #FCFBFB;
+            width: 80%;
+            margin: 0 auto 42px auto;
+        }
+
+        .store-download-btns{
+            display: flex;
+            width: 80%;
+            margin: 0 auto 42px auto;
+            justify-content: space-between;
+        }
+
+        .store-download-btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px 0;
+    
+            .first-text{
+                font-family: Mulish;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 18px;
+                color: #080000;
+            }
+    
+            .second-text{
+                font-family: Mulish;
+                font-style: normal;
+                font-weight: 800;
+                font-size: 18px;
+                line-height: 23px;
+                color: #080000;
+            }
+        }
+
+        
+    }
+
 }

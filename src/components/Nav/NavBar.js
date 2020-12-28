@@ -21,6 +21,7 @@ const Logo = styled.div`
 `
 const LogoText= styled.p`
     padding-left: 3px;
+    color: #fff;
     font-family: Mulish;
     font-weight: bold;
     font-size: 18px;
