@@ -44,10 +44,7 @@ const LandingPage = () => {
 
                 <div className="showcase-text">
                     <h1>Are you hungry?</h1>
-                    <p className='sub-title'>We Gatchu!!! Let’s get you started by quickly downloading our app.</p>
-                    {/* <AppButton 
-                        image={PlayStoreImage}
-                    /> */}
+                    <p className='sub-title'>We Gatchu!!! Let’s get you started by quickly downloading our app.</p>S
                     <div className="store-download-btns" >
                         <Button 
                             backgroundColor='#fff'
