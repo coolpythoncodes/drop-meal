@@ -10,7 +10,7 @@ const HamburgerMenu = styled.div`
     @media screen and (max-width: 600px){
         display: block;
         position: fixed;
-        top:25px;
+        top:26px;
         right:30px;
         z-index: 999;
 
@@ -19,9 +19,9 @@ const HamburgerMenu = styled.div`
 `
 
 const MenuBtnLine = styled.div`
-    width: 18px;
-    height: 2px;
-    margin-bottom: 4px;
+    width: 2.8rem;
+    height: 0.3rem;
+    margin-bottom: 0.5rem;
     background: #F17C22;
 `
 
