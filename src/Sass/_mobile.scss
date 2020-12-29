@@ -1,0 +1,49 @@
+@media screen and (max-width: 600px){
+    .showcase{
+
+        &-text{
+
+            h1{
+                width: 90%;
+                margin: auto;
+                margin-bottom: 43px;
+                text-align: center;
+            }
+
+            .sub-title{
+                width: 90%;
+                font-size: 14px;
+                line-height: 29px;
+                text-align: center;
+            }
+
+        
+            .store-download-btns{
+                margin-top: 0;
+                width: 90%;
+            }
+    
+            .store-download-btn{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 5px 0;
+                // border: solid red;
+        
+                .first-text{
+                    font-size: 10px;
+                    line-height: 13px;
+                }
+        
+                .second-text{
+                    font-size: 10px;
+                    line-height: 13px;
+                }
+
+                img{
+                    width: 30px;
+                }
+            }
+        }
+    }
+}

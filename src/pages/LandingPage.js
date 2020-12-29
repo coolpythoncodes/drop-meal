@@ -23,6 +23,7 @@ const LandingPage = () => {
 
     const [deviceWidth, setDeviceWidth] = useState(window.innerWidth);
     const breakPoint = 767;
+    const mobileBreakPoint = 600;
 
     useEffect(() => {
         const handleWindowResize = () => setDeviceWidth(window.innerWidth);
@@ -48,24 +49,24 @@ const LandingPage = () => {
                     <div className="store-download-btns" >
                         <Button 
                             backgroundColor='#fff'
-                            width='186'
+                            width={`${deviceWidth <= mobileBreakPoint ? '136' :'186' }`}
                             borderRadius='32'
                         >
                             <div className='store-download-btn' >
-                                <img className='store-image' src={AppStoreImage} alt=""/>
-                                <div>
-                                    <p className='first-text'>Get it on</p>
+                                <img className='store-image' src={AppStoreImage} alt="" />
+                                <div className='btn-text'>
+                                    <p className='first-text'>Download on the</p>
                                     <p className='second-text'>PlayStore</p>
                                 </div>
                             </div>
                         </Button>
                         <Button 
                             backgroundColor='#fff'
-                            width='186'
+                            width={`${deviceWidth <= mobileBreakPoint ? '136' :'186' }`}
                             borderRadius='32'
                         >
                             <div className='store-download-btn'>
-                                <img className='store-image' src={PlayStoreImage} alt=""/>
+                                <img className='store-image' src={PlayStoreImage} alt="" />
                                 <div>
                                     <p className='first-text'>Download on the</p>
                                     <p className='second-text'>Applestore</p>
