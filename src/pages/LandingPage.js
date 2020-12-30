@@ -1,25 +1,16 @@
-import { useState,useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
 import NavBar from '../components/Nav/NavBar';
 import NavLinks from '../components/Nav/NavLinks';
 
 import PlayStoreImage from '../assests/app-store.png';
 import AppStoreImage from '../assests/google-playstore.png';
 import Button from '../components/Button/Button';
-
-// const AppBtnFirstText = styled.p`
-
-// font-family: Mulish;
-// font-style: normal;
-// font-weight: normal;
-// font-size: 14px;
-// line-height: 18px;
-// /* identical to box height */
-
-
-// color: #080000;
-// `
+// import MenuContextProvider from '../context';
+import { MenuContext } from '../context';
 
 const LandingPage = () => {
+
+    const { menuToggle } = useContext(MenuContext);
 
     const [deviceWidth, setDeviceWidth] = useState(window.innerWidth);
     const breakPoint = 767;
@@ -34,14 +25,21 @@ const LandingPage = () => {
     return (
         <>
             <section className="showcase">
-                <NavBar>  
-                    {
-                    <NavLinks 
-                        deviceWidth={deviceWidth} 
-                        breakPoint={breakPoint}
-                    />
-                    }
-                </NavBar>
+                {/* <MenuContextProvider > */}
+                    <NavBar
+                            // menuToggle={menuToggle} 
+                            // onToggle={onToggle}
+                        >  
+                            {
+                            <NavLinks 
+                                menuToggle={menuToggle}
+                                deviceWidth={deviceWidth} 
+                                breakPoint={breakPoint}
+                            />
+                            }
+                        </NavBar>
+                {/* </MenuContextProvider> */}
+                   
 
                 <div className="showcase-text">
                     <h1>Are you hungry?</h1>
