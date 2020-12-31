@@ -8,6 +8,9 @@ const Wrapper = styled.div`
     color: ${props => props.color};
     width: ${props => props.width}px;
     height: ${props => props.height}px;
+    ${
+        props => props.border && `border: 1px solid ${props.borderColor};`
+    }
     border-radius: ${props => props.borderRadius}px;
 
 `
@@ -19,7 +22,16 @@ const Text = styled.p`
     line-height: 24px;
 `
 
-const Button = ({ children,color,backgroundColor,width,height,borderRadius }) => {
+const Button = ({ 
+        children,
+        color,
+        backgroundColor,
+        width,
+        height,
+        border,
+        borderRadius,
+        borderColor,
+    }) => {
     return (
         <Wrapper 
             color={color}
@@ -27,6 +39,8 @@ const Button = ({ children,color,backgroundColor,width,height,borderRadius }) =>
             width={width}
             height={height}
             borderRadius={borderRadius}
+            border={border}
+            borderColor={borderColor}
         >
             <Text>{children}</Text>
         </Wrapper>
