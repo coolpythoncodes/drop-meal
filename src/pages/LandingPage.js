@@ -7,6 +7,8 @@ import AppStoreImage from '../assests/google-playstore.png';
 import Button from '../components/Button/Button';
 // import MenuContextProvider from '../context';
 import { MenuContext } from '../context';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons';
 
 const LandingPage = () => {
 
@@ -74,6 +76,40 @@ const LandingPage = () => {
                     </div>
                 </div>
             </section>
+
+            <section id="about">
+                <h1>About DropMeal</h1>
+                <p className="about-text">We at DropMeal tasked ourselves with making convienient food delivery. We took the extra work to making sure you get meals just as fresh and warm as it should be.</p>
+                <p className="about-text">Our extra service include helping food vendors as well, to deliver to their clients. This delivery service is strictly for food vendors as our service deals with food.</p>
+
+                <Button
+                    width={`${deviceWidth <= mobileBreakPoint ? '190' : '254'}`}
+                    height='50'
+                    // backgroundColor='red'
+                    border
+                    color='#0167C8'
+                    borderRadius='6'
+                    borderColor='#0167C8'
+                    
+                >
+                    <div className="partner-btn">
+                        <p 
+                            // style={{color:'#0167C8'}}
+                        >Partner with us</p>
+                        <FontAwesomeIcon 
+                            icon={faLongArrowAltRight} 
+                            color='#0074DF'
+                            style={{
+                                marginLeft:'1rem'
+                            }}
+                        />
+                    </div>
+                </Button>
+            </section>
+
+            {/* <section id="works">
+                <h1>How it works</h1>
+            </section> */}
 
             
         </>
