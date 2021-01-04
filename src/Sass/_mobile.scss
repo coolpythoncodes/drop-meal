@@ -84,3 +84,19 @@
         }
     }
 } 
+
+
+@media screen and (max-width: 767px){
+
+    #about{
+        padding-bottom: 139px;
+    }
+
+    #how-it-works{
+
+        #works-heading{
+            font-size: 2rem;
+            margin-bottom: 35px;
+        }
+    }
+}

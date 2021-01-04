@@ -9,6 +9,7 @@ import Button from '../components/Button/Button';
 import { MenuContext } from '../context';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons';
+import Works from '../components/Works Section/Works';
 
 const LandingPage = () => {
 
@@ -45,7 +46,7 @@ const LandingPage = () => {
 
                 <div className="showcase-text">
                     <h1>Are you hungry?</h1>
-                    <p className='sub-title'>We Gatchu!!! Let’s get you started by quickly downloading our app.</p>S
+                    <p className='sub-title'>We Gatchu!!! Let’s get you started by quickly downloading our app.</p>
                     <div className="store-download-btns" >
                         <Button 
                             backgroundColor='#fff'
@@ -93,9 +94,7 @@ const LandingPage = () => {
                     
                 >
                     <div className="partner-btn">
-                        <p 
-                            // style={{color:'#0167C8'}}
-                        >Partner with us</p>
+                        <p>Partner with us</p>
                         <FontAwesomeIcon 
                             icon={faLongArrowAltRight} 
                             color='#0074DF'
@@ -105,6 +104,11 @@ const LandingPage = () => {
                         />
                     </div>
                 </Button>
+            </section>
+
+            <section id="how-it-works">
+                <h1 id='works-heading'>How it Works</h1>
+                <Works />
             </section>
 
             {/* <section id="works">

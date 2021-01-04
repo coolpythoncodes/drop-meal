@@ -112,9 +112,21 @@
         margin-bottom: 55px;
     }
     
+}
   
-
-
+#how-it-works{
+    padding-bottom: 178px;
+       
+    #works-heading{
+        font-family: Mulish;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 49px;
+        letter-spacing: 0.015em;
+        color: #F49648;
+        margin-bottom: 91px;
+        text-align: center;
+    }
 }
 
 @import 'mobile';
