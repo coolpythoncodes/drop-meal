@@ -1,9 +1,11 @@
 import { useState, useEffect, useContext } from 'react';
 import NavBar from '../components/Nav/NavBar';
 import NavLinks from '../components/Nav/NavLinks';
-import ShowcaseImage from '../assests/showcase.svg';
+// import ShowcaseImage from '../assests/showcase.svg';
+import PayOnceImage from '../assests/payoncebuy.svg';
 import PlayStoreImage from '../assests/app-store.png';
 import AppStoreImage from '../assests/google-playstore.png';
+import AppStoreImageWhite from '../assests/playstorewhite.png';
 import Button from '../components/Button/Button';
 // import MenuContextProvider from '../context';
 import { MenuContext } from '../context';
@@ -79,7 +81,7 @@ const LandingPage = () => {
             </section>
 
             <section id="about">
-                <img src={ShowcaseImage} alt="DropMeal food delivery service in Benin, Nigeria" className='showcase-image'/>
+                {/* <img src={ShowcaseImage} alt="DropMeal food delivery service in Benin, Nigeria" className='showcase-image'/> */}
                 <h1>About DropMeal</h1>
                 <p className="about-text">We at DropMeal tasked ourselves with making convienient food delivery. We took the extra work to making sure you get meals just as fresh and warm as it should be.</p>
                 <p className="about-text">Our extra service include helping food vendors as well, to deliver to their clients. This delivery service is strictly for food vendors as our service deals with food.</p>
@@ -111,12 +113,50 @@ const LandingPage = () => {
                 <h1 id='works-heading'>How it Works</h1>
                 <Works />
             </section>
-
-            {/* <section id="works">
-                <h1>How it works</h1>
-            </section> */}
-
             
+            <section id="pay-once">
+                <div className="pay-once-image">
+                    <img src={PayOnceImage} alt=""  className="pay-once-img" />
+                </div>
+                <div className="pay-once-info">
+                    <h1>Pay once buy anytime</h1>
+                    <p className='pay-one-text'>Introducing our online payment platform with it’s flexible wallet. DropPay wallet allows you to credit your wallet and make payment anytime you want, no card stress, no delay, just load and pay. Sweeeeet! It’s that easy, click the link below to try now!</p>
+                    <div className="button-container" >
+                        <Button
+                            backgroundColor='#000'
+                            color='#fff' 
+                            width={`${deviceWidth <= mobileBreakPoint ? '136' :'186' }`}
+                            height='52'
+                            borderRadius='32'
+                            marginRight='16'
+                        >
+                            <div className='store-download-btn'>
+                                <img className='store-image' src={AppStoreImageWhite} alt="" />
+                                <div>
+                                    <p className='first-text'>Download on the</p>
+                                    <p className='second-text'>Playstore</p>
+                                </div>
+                            </div>
+                        </Button>
+                        <Button
+                            backgroundColor='#000'
+                             color='#fff' 
+                             width={`${deviceWidth <= mobileBreakPoint ? '136' :'186' }`}
+                             height='52'
+                             borderRadius='32'
+                        >
+                            <div className='store-download-btn'>
+                                <img className='store-image' src={PlayStoreImage} alt="" />
+                                <div>
+                                    <p className='first-text'>Download on the</p>
+                                    <p className='second-text'>Applestore</p>
+                                </div>
+                            </div>
+                        </Button>
+                </div>
+                </div>
+
+            </section>
         </>
     );
 }

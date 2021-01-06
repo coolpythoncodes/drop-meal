@@ -26,11 +26,6 @@
             }
     
             .store-download-btn{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: 5px 0;
-                // border: solid red;
         
                 .first-text{
                     font-size: 10px;
@@ -74,6 +69,68 @@
 
         .partner-btn{
             font-size: 1rem;
+        }
+    }
+
+    #how-it-works{
+        padding-bottom: 40px;
+    }
+
+    #pay-once{
+        flex-direction: column;
+        width: 90%;
+
+        .pay-once-image{
+            order: 1;
+            flex: unset;
+            width: 100%;
+            overflow: hidden;
+
+            .pay-once-img{
+                width: 120%;
+                margin-left: 0.3rem;
+            }
+
+        }
+    
+        .pay-once-info{
+           margin-top: 0;
+           flex: unset;
+        }
+
+        h1{
+            font-size: 32px;
+            text-align: center;
+            line-height: 39px;
+            padding-bottom: 28px;
+        }
+
+        .pay-one-text{
+            font-size: 18px;
+            line-height: 30px;
+            text-align: center;
+        }
+
+        .button-container{
+            justify-content: center;
+        }
+
+        .store-download-btn{
+
+            .first-text{
+                font-size: 10px;
+                line-height: 13px;
+            }
+    
+            .second-text{
+                font-size: 10px;
+                line-height: 13px;
+            }
+
+            img{
+                width: 25px;
+                margin-right: 5px;
+            }
         }
     }
 }
