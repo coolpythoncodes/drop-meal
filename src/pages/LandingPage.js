@@ -85,10 +85,6 @@ const LandingPage = () => {
                     src={ShowcaseImage} 
                     alt="DropMeal food delivery service in Benin, Nigeria" 
                     className='showcase-image'
-                    style={{
-                        border:"solid red",
-                        
-                    }}
                 />
                 <h1>About DropMeal</h1>
                 <p className="about-text">We at DropMeal tasked ourselves with making convienient food delivery. We took the extra work to making sure you get meals just as fresh and warm as it should be.</p>
