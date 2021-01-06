@@ -47,9 +47,8 @@
     #about{
         justify-content: center;
         .showcase-image{
-            width: 100%;
+            width: 293px;
             margin-top: -300px;
-            margin-left: 8rem;
         }
 
         h1{
@@ -171,6 +170,13 @@
 
         .showcase-image{
             margin-top: -500px;
+        }
+    }
+
+    #pay-once{
+
+        .pay-once-image{
+            align-self: center;
         }
     }
 }

@@ -1,7 +1,7 @@
 import { useState, useEffect, useContext } from 'react';
 import NavBar from '../components/Nav/NavBar';
 import NavLinks from '../components/Nav/NavLinks';
-// import ShowcaseImage from '../assests/showcase.svg';
+import ShowcaseImage from '../assests/showcase.png';
 import PayOnceImage from '../assests/payoncebuy.svg';
 import PlayStoreImage from '../assests/app-store.png';
 import AppStoreImage from '../assests/google-playstore.png';
@@ -81,7 +81,15 @@ const LandingPage = () => {
             </section>
 
             <section id="about">
-                {/* <img src={ShowcaseImage} alt="DropMeal food delivery service in Benin, Nigeria" className='showcase-image'/> */}
+                <img 
+                    src={ShowcaseImage} 
+                    alt="DropMeal food delivery service in Benin, Nigeria" 
+                    className='showcase-image'
+                    style={{
+                        border:"solid red",
+                        
+                    }}
+                />
                 <h1>About DropMeal</h1>
                 <p className="about-text">We at DropMeal tasked ourselves with making convienient food delivery. We took the extra work to making sure you get meals just as fresh and warm as it should be.</p>
                 <p className="about-text">Our extra service include helping food vendors as well, to deliver to their clients. This delivery service is strictly for food vendors as our service deals with food.</p>
