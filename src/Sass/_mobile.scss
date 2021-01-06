@@ -1,6 +1,7 @@
 @media screen and (max-width: 600px){ 
 
     .showcase{
+        height: 800px;
 
         &-text{
 
@@ -49,6 +50,12 @@
     }
 
     #about{
+        justify-content: center;
+        .showcase-image{
+            width: 100%;
+            margin-top: -300px;
+            margin-left: 8rem;
+        }
 
         h1{
             margin-top: 84px;
@@ -97,6 +104,16 @@
         #works-heading{
             font-size: 2rem;
             margin-bottom: 35px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1170px) {
+    
+    #about{
+
+        .showcase-image{
+            margin-top: -500px;
         }
     }
 }
