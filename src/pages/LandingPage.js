@@ -6,6 +6,7 @@ import PayOnceImage from '../assests/payoncebuy.svg';
 import PlayStoreImage from '../assests/app-store.png';
 import AppStoreImage from '../assests/google-playstore.png';
 import AppStoreImageWhite from '../assests/playstorewhite.png';
+import Girl from '../assests/girl.svg';
 import Button from '../components/Button/Button';
 // import MenuContextProvider from '../context';
 import { MenuContext } from '../context';
@@ -159,7 +160,25 @@ const LandingPage = () => {
                         </Button>
                 </div>
                 </div>
+            </section>
 
+            <section id="partner">
+                <div className="partner-container">
+                    <div className="partner-left">
+                        <img src={Girl} alt=""/>
+                        <p>Partnering with others has been our strength growing, and if you think we can work together, why not! Let’s partner up.</p>
+                    </div>
+                    <div className="partner-right">
+                        <h1>Hey partner,</h1>
+                        <div>
+                            <h2>How would you love us to partner</h2>
+                            <form action="">
+
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
             </section>
         </>
     );

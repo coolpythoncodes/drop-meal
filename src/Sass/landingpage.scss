@@ -139,6 +139,7 @@
     // border: solid red;
     width: 80%;
     margin: auto;
+    padding-bottom: 200px;
     
 
     .pay-once-image{
@@ -213,4 +214,79 @@
         }
     }
 }
+
+#partner{
+    background: #000000;
+    color: #fff;
+    height: 806.32px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+    &::before{
+        content: '';
+        position: absolute;
+        background: #000;
+        top: -35px;
+        left: 0;
+        height: 70px;
+        width: 100%;
+        transform: skewY(3deg);
+    }
+
+    .partner-container{
+        display: flex;
+        width: 80%;
+        margin: auto;
+        border: solid red;
+
+        .partner-left{
+            flex: 0.5;
+            border: solid blue;
+
+            p{
+                font-family: Mulish;
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 39px;
+                letter-spacing: 0.015em;
+            }
+        }
+
+        .partner-right{
+            flex: 0.5;
+            border: solid yellow;
+
+            h1{
+                font-family: Mulish;
+                font-size: 48px;
+                font-weight: 700;
+                line-height: 49px;
+                letter-spacing: 0.015em;
+                color: #F49648;
+                width: 220px;
+            }
+
+            h2{
+                font-family: Mulish;
+                font-size: 24px;
+                line-height: 39px;
+                letter-spacing: 0.015em;
+                color: #FFFFFF;
+            }
+
+            form{
+                width: 408px;
+                height: 499px;
+
+                background: rgba(255, 255, 255, 0.2);
+                backdrop-filter: blur(70px);
+                /* Note: backdrop-filter has minimal browser support */
+
+                border-radius: 6px;
+            }
+        }
+    }
+}
+
 @import 'mobile';
