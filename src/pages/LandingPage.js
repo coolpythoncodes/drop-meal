@@ -7,6 +7,8 @@ import PlayStoreImage from '../assests/app-store.png';
 import AppStoreImage from '../assests/google-playstore.png';
 import AppStoreImageWhite from '../assests/playstorewhite.png';
 import Girl from '../assests/girl.svg';
+import UserIcon from '../assests/user-icon.svg';
+import EmailIcon from '../assests/email_icon.svg';
 import Button from '../components/Button/Button';
 // import MenuContextProvider from '../context';
 import { MenuContext } from '../context';
@@ -171,9 +173,26 @@ const LandingPage = () => {
                     <div className="partner-right">
                         <h1>Hey partner,</h1>
                         <div>
-                            <h2>How would you love us to partner</h2>
+                            
                             <form action="">
+                                <h2>How would you love us to partner</h2>
+                                <div className="form-container">
+                                    <select>
+                                        <option>Choose an option</option>
+                                        <option>Vendor</option>
+                                        <option>Agent</option>
+                                    </select>
+                                    <div className="form-field">
+                                        <img src={UserIcon} alt=""/>
+                                        <input type="text" placeholder='Full Name'/>
+                                    </div>
+                                    <div className="form-field">
+                                        <img src={EmailIcon} alt=""/>
+                                        <input type="email" placeholder='Email'/>
+                                    </div>
 
+                                    <button type="submit">Begin</button>
+                                </div>
                             </form>
 
                         </div>

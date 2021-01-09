@@ -42,6 +42,8 @@
                 }
             }
         }
+
+
     }
 
     #about{
@@ -78,6 +80,7 @@
     #pay-once{
         flex-direction: column;
         width: 90%;
+        padding-bottom: 100px;
 
         .pay-once-image{
             order: 1;
@@ -88,6 +91,7 @@
             .pay-once-img{
                 width: 120%;
                 margin-left: 0.3rem;
+                margin-top: 41px;
             }
 
         }
@@ -132,6 +136,8 @@
             }
         }
     }
+
+    
 }
 
 @media screen and (max-width: 300px){
@@ -177,6 +183,81 @@
 
         .pay-once-image{
             align-self: center;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1170px){
+    #partner{
+        
+        .partner-container{
+            width: 90%;
+            height: unset;
+
+            .partner-left{
+                flex: 0.5;
+
+                img{
+                    width: 80%;
+                }
+
+                p{
+                    width: 100%;
+                }
+            }
+
+            .partner-right{
+                flex: 0.5;
+
+                h1{
+                    margin-left: 0;
+                }
+
+                form{
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px){
+    #partner{
+        height: 180vh;
+
+        .partner-container{
+            flex-direction: column;
+            margin-top: 0;
+            
+            .partner-left{
+                width: 80%;
+                all: unset;
+                
+                img{
+                    width: 100%;
+                }
+
+                p{
+                    text-align: center;
+                    font-size: 18px;
+                    line-height: 29px;
+                }
+            }
+
+            .partner-right{
+                background: url('../assests/circles.png') no-repeat -50px 100%;
+                width: 100%;
+
+                h1{
+                    margin-top: 85px;
+                    margin-left: 0;
+                }
+
+                form{
+                   margin-left: 0;
+                   width: 100%;
+                }
+            }
         }
     }
 }

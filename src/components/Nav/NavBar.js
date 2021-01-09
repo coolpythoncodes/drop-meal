@@ -88,6 +88,7 @@ const Wrapper = styled.div`
     position: fixed;
     top: 0;
     background: #000;
+    z-index: 9999;
 
     @media screen and (max-width: 600px){
         padding: 2rem;

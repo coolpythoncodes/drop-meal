@@ -222,27 +222,39 @@
     display: flex;
     align-items: center;
     position: relative;
+    margin-bottom: 403px;
     
     &::before{
         content: '';
         position: absolute;
         background: #000;
-        top: -35px;
+        top: -40px;
         left: 0;
-        height: 70px;
+        height: 80px;
         width: 100%;
         transform: skewY(3deg);
+    }
+
+    &::after{
+        content: '';
+        position: absolute;
+        background: #000;
+        bottom: -70px;
+        left: 0;
+        height: 100px;
+        width: 100%;
+        transform: skewY(2deg);
     }
 
     .partner-container{
         display: flex;
         width: 80%;
         margin: auto;
-        border: solid red;
+        height: 80%;
+        height: 89vh;
 
         .partner-left{
             flex: 0.5;
-            border: solid blue;
 
             p{
                 font-family: Mulish;
@@ -255,7 +267,10 @@
 
         .partner-right{
             flex: 0.5;
-            border: solid yellow;
+            // flex: 0.38;
+            margin-left: auto;
+            background: url('../assests/circles.png') no-repeat 0 20vh;
+            background-size: contain;
 
             h1{
                 font-family: Mulish;
@@ -265,25 +280,160 @@
                 letter-spacing: 0.015em;
                 color: #F49648;
                 width: 220px;
+                margin-top: 30px;
+                margin-left: 5vw;
             }
 
             h2{
                 font-family: Mulish;
                 font-size: 24px;
+                font-weight: 400;
                 line-height: 39px;
                 letter-spacing: 0.015em;
                 color: #FFFFFF;
+                width: 80%;
+                margin: auto;
+                margin-bottom: 13px;
             }
 
             form{
-                width: 408px;
+                width: #{"min(408px, 100%)"};
                 height: 499px;
-
-                background: rgba(255, 255, 255, 0.2);
-                backdrop-filter: blur(70px);
+                // background: url('../assests/circles.png') no-repeat center center/cover;
+                // overflow: visible;
+                // background: rgba(255, 255, 255, 0.2);
+                // backdrop-filter: blur(70px);
                 /* Note: backdrop-filter has minimal browser support */
-
                 border-radius: 6px;
+                padding-top: 28px;
+                margin-top: 64px;
+                position: relative;
+                box-shadow: 0 0 3rem 0 rgba(0, 0, 0, .9); 
+                margin-left: 5vw;
+                z-index: 1;
+                
+                &::before{
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(255, 255, 255, 0.2);
+                    // box-shadow: inset 0 0 2000px rgba(255, 255, 255, 1);
+                    // filter: blur(4px);
+                    backdrop-filter: blur(10px);
+                    -webkit-backdrop-filter: blur(10px);
+                    z-index: -1;
+                    // background: #000;
+                }
+
+                .form-container{
+                    width: 80%;
+                    margin: auto;
+
+                    .form-field{
+                        display: flex;
+                        align-items: center;
+                        background: #ffffff;
+                        height: 60px;
+                        margin-bottom: 30px;
+                        border-radius: 6px;
+                    }
+
+                    select{
+                        height: 60px;
+                        width: 100%;
+                        margin-bottom: 30px;
+                        outline: none;
+                        font-family: Mulish;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 39px;
+                        letter-spacing: 0.015em;
+                        color: #070000;
+                        padding-left: 4vw;
+                        border-radius: 6px;
+                        background-image: url("../assests/arrow-down.svg");
+                        background-repeat: no-repeat;
+                        background-size: .65em auto;
+                        background-position: right 2em top 50%;
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+
+                        // Hide arrow icon in IE browsers 
+                        &::-ms-expand {
+                            display: none;
+                          }
+                    }
+
+                    img{
+                        margin-left: 19px;
+                    }
+
+                    input[type='text'], input[type='email']{
+                        outline: none;
+                        border: 0;
+                        height: 100%;
+                        width: 80%;
+                        padding-left: 20px;
+                        font-family: Mulish;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 39px;
+                        letter-spacing: 0.015em;
+                        color: #070000;
+
+                        &::placeholder{
+                            font-family: Mulish;
+                            font-weight: 400;
+                            font-size: 18px;
+                            line-height: 39px;
+                            letter-spacing: 0.015em;
+                            color: #070000;
+                          }
+                          
+                        &:-ms-input-placeholder{
+                            font-family: Mulish;
+                            font-weight: 400;
+                            font-size: 18px;
+                            line-height: 39px;
+                            /* identical to box height, or 219% */
+                            
+                            letter-spacing: 0.015em;
+                            
+                            color: #070000;
+                          }
+                          
+                        &::-ms-input-placeholder{
+                            font-family: Mulish;
+                            font-weight: 400;
+                            font-size: 18px;
+                            line-height: 39px;
+                            /* identical to box height, or 219% */
+                            
+                            letter-spacing: 0.015em;
+                            
+                            color: #070000;
+                          }
+                    }
+
+                    button{
+                        width: 100%;
+                        height: 60px;
+                        background: linear-gradient(180deg, #F12F2E 0%, #F49648 100%);
+                        border-radius: 6px;
+                        outline: none;
+                        border: 0;
+                        font-family: Mulish;
+                        font-weight: 600;
+                        font-size: 24px;
+                        line-height: 39px;
+                        letter-spacing: 0.015em;
+                        color: #FFFFFF;
+                        margin-top: 13px;
+                    }
+                }
             }
         }
     }
