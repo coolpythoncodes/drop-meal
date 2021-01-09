@@ -199,6 +199,15 @@ const LandingPage = () => {
                     </div>
                 </div>
             </section>
+
+            <section id="our-partners">
+                <div className="partners-container">
+                    <h1>Meet our awesome partners</h1>
+                    <div className="partners">
+                        
+                    </div>
+                </div>
+            </section>
         </>
     );
 }

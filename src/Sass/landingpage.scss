@@ -222,7 +222,7 @@
     display: flex;
     align-items: center;
     position: relative;
-    margin-bottom: 403px;
+    margin-bottom: 173px;
     
     &::before{
         content: '';
@@ -435,6 +435,34 @@
                     }
                 }
             }
+        }
+    }
+}
+
+#our-partners{
+    margin-bottom: 100px;
+
+    .partners-container{
+        width: 80%;
+        margin: auto;
+        
+        h1{
+            font-family: Mulish;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 49px;
+            letter-spacing: 0.015em;
+            color: #F49648;
+            text-align: center;
+            margin-bottom: 37px;
+        }
+
+        .partners{
+            width: #{'min(100%, 1104px)'};
+            height: 298px;
+            background: #F7F7F7;
+            border-radius: 149px;
+            margin: auto;
         }
     }
 }
