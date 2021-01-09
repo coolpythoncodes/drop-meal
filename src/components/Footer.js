@@ -30,7 +30,6 @@ const Footerheading = styled.h2`
 
 const Wrapper = styled.footer`
     padding-bottom: 44px;
-    // border: solid red;
 
 `
 
@@ -66,13 +65,22 @@ const LogoText = styled.h1`
 
 const FooterRight = styled.div`
     display: flex;
-    border: solid red;
+    justify-content: space-between;
     @media screen and (max-width: 767px){
         order: -1;
         justify-self: space-between;
     }
 `
+
+const FooterLinks = styled.div`
+    margin-right: 90px;
+`
+
 const Footer = () => {
+
+    const getCurrentYear = () => {
+        return new Date().getFullYear();
+    }
     return (
         <Wrapper>
             <Container>
@@ -81,22 +89,18 @@ const Footer = () => {
                         <img src={Logo} alt="DropMeal Logo"/>
                         <LogoText>DropMeal</LogoText>
                     </DropMealLogo>
-                    <Text>Copyright 2020 DropMeal All rights reserved</Text>
+                    <Text>Copyright {getCurrentYear()} DropMeal All rights reserved</Text>
                     <p style={{ color: '#8C8C8C' }}><Link href="/">Terms of service</Link> | <Link href="/">Privacy Policy</Link></p>
                 </FooterLeft>
                 <FooterRight>
-                    <div
-                        style={{
-                            marginRight: '90px',
-                        }}
-                    >
+                    <FooterLinks>
                         <Footerheading>Company</Footerheading>
                         <ul>
                             <li><Link href="/">DropPay</Link></li>
                             <li><Link href="/">About us</Link></li>
                             <li><Link href="/">Contact us</Link></li>
                         </ul>
-                    </div>
+                    </FooterLinks>
                     <div>
                         <Footerheading>Resources</Footerheading>
                         <ul>
