@@ -15,6 +15,7 @@ import { MenuContext } from '../context';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons';
 import Works from '../components/Works Section/Works';
+import Footer from '../components/Footer';
 
 const LandingPage = () => {
 
@@ -208,6 +209,7 @@ const LandingPage = () => {
                     </div>
                 </div>
             </section>
+            <Footer/>
         </>
     );
 }
