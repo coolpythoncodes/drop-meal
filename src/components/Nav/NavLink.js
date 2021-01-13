@@ -10,9 +10,9 @@ import { MenuContext } from '../../context';
 // `
 
 const Wrapper = styled.li`
-    margin-right: 40px;
+    margin-right: 30px;
 
-    @media screen and (max-width: 600px){
+    @media screen and (max-width: 768px){
         padding: 20px 10px;
         border-bottom: 1px solid #ccc;
         // transform: translate3d(-520px, 0, 0);
@@ -22,13 +22,11 @@ const Wrapper = styled.li`
 `
 
 const Link = styled.a`
-    @media screen and (max-width: 600px){
+    @media screen and (max-width: 768px){
         font-family: Mulish;
         font-weight: 400;
         line-height: 24px;
-        font-size: 14px;
-
-        
+        font-size: 14px;   
     }
 `
 

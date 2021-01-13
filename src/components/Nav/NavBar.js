@@ -53,12 +53,12 @@ const HamburgerMenu = styled.div`
     display: none;
     transition: all 0.5s ease-out;
 
-    @media screen and (max-width: 600px){
+    @media screen and (max-width: 768px){
         display: block;
         position: fixed;
         top: 27px;
         right:30px;
-        z-index: 999;
+        z-index: 99999999;
         ${
             props => props.menuToggle && close
         }
@@ -67,18 +67,10 @@ const HamburgerMenu = styled.div`
 `
 
 const MenuBtnLine = styled.div`
-    width: 2rem;
+    width: 30px;
     height: 0.2rem;
     margin-bottom: 0.4rem;
     background: #F17C22;
-`
-
-const Container = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 80%;
-    margin: auto;
 `
 
 const Wrapper = styled.div`
@@ -90,18 +82,23 @@ const Wrapper = styled.div`
     background: #000;
     z-index: 9999;
 
-    @media screen and (max-width: 600px){
-        padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    @media screen and (max-width: 768px){
+        height: 5rem;
     }
 `
 
 const Logo = styled.div`
     display: flex;
     align-items: center;
-    flex: 0.2;
+    margin-right: 1rem;
+    // flex: 0.2;
   
 
-    @media screen and (max-width: 600px){
+    @media screen and (max-width: 768px){
         position: fixed;
         top: 20px;
         left: 29px;
@@ -118,9 +115,9 @@ const LogoText= styled.p`
     letter-spacing: 0.015em;
 `
 const Nav = styled.nav`
-    flex: 0.6;
+    // flex: 0.6;
 
-    @media screen and (max-width: 600px){
+    @media screen and (max-width: 768px){
         display: block;
     }
 `
@@ -131,16 +128,16 @@ const LinkWrapper = styled.ul`
     line-height: 24px;
     letter-spacing: 0.015em;
 
-    @media screen and (max-width: 600px){
+    @media screen and (max-width: 768px){
         display: block;
         position:fixed;
         top: 0;
         left: 0;
         height: 100%;
-        width: 70%;
+        width: 80%;
         background: #000;
         padding: 80px 30px;
-        transform: translate(-500px);
+        transform: translate(-700px);
         transition: transform 0.5s ease-in-out;
         z-index: 999;
 
@@ -165,9 +162,9 @@ const LinkWrapper = styled.ul`
 
 `
 const ButtonWrapper = styled.div`
-    flex: 0.2;
+    // flex: 0.2;
 
-    @media screen and (max-width: 600px){
+    @media screen and (max-width: 768px){
         display: none;
     }
 `
@@ -191,7 +188,7 @@ const NavBar = ({ children }) => {
             </HamburgerMenu>
 
             <Wrapper>
-                <Container>
+                {/* <Container> */}
                     <Logo>
                         <img src={LogoImage} alt=""/>
                         <LogoText>DropMeal</LogoText>
@@ -212,7 +209,7 @@ const NavBar = ({ children }) => {
                                 Download Now
                         </Button>
                     </ButtonWrapper>
-                </Container>
+                {/* </Container> */}
    
             </Wrapper>
         </>
