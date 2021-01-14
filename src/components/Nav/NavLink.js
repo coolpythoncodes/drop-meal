@@ -6,7 +6,7 @@ import { Link } from 'react-scroll';
 
 const Wrapper = styled.li`
     margin-right: 30px;
-    cursor: default;
+    cursor: pointer;
 
     @media screen and (max-width: 768px){
         padding: 20px 10px;
