@@ -3,12 +3,6 @@ import styled from 'styled-components'
 import { MenuContext } from '../../context';
 import { Link } from 'react-scroll';
 
-// const close = `
-//     transform: translate3d(0, 0, 0);
-// //     .nav-item:nth-child(1) {
-// //     transition-delay: 0.1s;
-// //   }
-// `
 
 const Wrapper = styled.li`
     margin-right: 30px;
@@ -35,7 +29,17 @@ const StyledLink = styled(Link)`
 
 const NavLink = ({ href, navLink, offset }) => {
     
-    const { menuToggle } = useContext(MenuContext);
+    const { menuToggle,setMenuToggle } = useContext(MenuContext);
+
+    const hideSlideNav = () => {
+        // if (mobileView) {
+            setTimeout(() => {
+                setMenuToggle(!menuToggle);
+                // setnavToggle(!navToggle);
+            }, 1000);
+        // }
+    
+    }
     // const onToggle = () => {
     //     setMenuToggle(!menuToggle)
     // }
@@ -49,6 +53,7 @@ const NavLink = ({ href, navLink, offset }) => {
                     smooth={true}
                     duration={100}
                     offset={offset}
+                    onClick={hideSlideNav}
                 >
                     {navLink}
                 </StyledLink>

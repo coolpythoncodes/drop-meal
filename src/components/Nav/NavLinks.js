@@ -1,6 +1,5 @@
 import NavLink from "./NavLink"
 
-
 const NavLinks = ({ breakPoint,deviceWidth }) => {
 
     const mobileNavLinksComponent = <>
