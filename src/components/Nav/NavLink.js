@@ -33,7 +33,7 @@ const StyledLink = styled(Link)`
     }
 `
 
-const NavLink = ({ href,navLink }) => {
+const NavLink = ({ href, navLink, offset }) => {
     
     const { menuToggle } = useContext(MenuContext);
     // const onToggle = () => {
@@ -48,6 +48,7 @@ const NavLink = ({ href,navLink }) => {
                     activeClass='active'
                     smooth={true}
                     duration={100}
+                    offset={offset}
                 >
                     {navLink}
                 </StyledLink>
