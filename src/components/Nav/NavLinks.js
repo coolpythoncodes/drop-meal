@@ -6,23 +6,27 @@ const NavLinks = ({ breakPoint,deviceWidth }) => {
         <NavLink
             navLink='About' 
             href='about'
-            // offset={450}
+            offset={350}
         />
         <NavLink 
             navLink='How it works' 
             href='how-it-works'
+            offset={-150}
         />
         <NavLink 
             navLink='Partner with us' 
             href='partner'
+            offset={-50}
         />
         <NavLink
             navLink='Support' 
-            href='contact' 
+            href='contact'
+            offset={-150} 
         />
         <NavLink 
             navLink='Download' 
             href='/' 
+            
         />
     </>
 
