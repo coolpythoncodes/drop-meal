@@ -6,7 +6,7 @@ import PayOnceImage from '../assests/payoncebuy.svg';
 import PlayStoreImage from '../assests/app-store.png';
 import AppStoreImage from '../assests/google-playstore.png';
 import AppStoreImageWhite from '../assests/playstorewhite.png';
-import ContactImage from '../assests/contact.svg';
+// import ContactImage from '../assests/contact.svg';
 import Girl from '../assests/girl.svg';
 import UserIcon from '../assests/user-icon.svg';
 import EmailIcon from '../assests/email_icon.svg';
