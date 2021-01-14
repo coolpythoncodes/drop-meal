@@ -103,6 +103,9 @@ const LandingPage = () => {
                     color='#0167C8'
                     borderRadius='6'
                     borderColor='#0167C8'
+                    internalLink
+                    href='partner'
+                    offset={-80}
                     
                 >
                     <div className="partner-btn">
