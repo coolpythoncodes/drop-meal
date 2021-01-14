@@ -10,7 +10,7 @@ const Wrapper = styled.li`
 
     @media screen and (max-width: 768px){
         padding: 20px 10px;
-        border-bottom: 1px solid #ccc;
+        // border-bottom: 1px solid #ccc;
         // transform: translate3d(-520px, 0, 0);
         // transition: all 0.5s ease-out;
 
@@ -23,7 +23,8 @@ const StyledLink = styled(Link)`
         font-family: Mulish;
         font-weight: 400;
         line-height: 24px;
-        font-size: 14px;   
+        font-size: 14px; 
+        color:  #F17C22;  
     }
 `
 
