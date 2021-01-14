@@ -6,6 +6,7 @@ import PayOnceImage from '../assests/payoncebuy.svg';
 import PlayStoreImage from '../assests/app-store.png';
 import AppStoreImage from '../assests/google-playstore.png';
 import AppStoreImageWhite from '../assests/playstorewhite.png';
+import ContactImage from '../assests/contact.svg';
 import Girl from '../assests/girl.svg';
 import UserIcon from '../assests/user-icon.svg';
 import EmailIcon from '../assests/email_icon.svg';
@@ -13,7 +14,7 @@ import Button from '../components/Button/Button';
 // import MenuContextProvider from '../context';
 import { MenuContext } from '../context';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons';
 import Works from '../components/Works Section/Works';
 import Footer from '../components/Footer';
 
@@ -207,6 +208,30 @@ const LandingPage = () => {
                     <div className="partners">
                         
                     </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                {/* <img src={ContactImage} alt=""/> */}
+                <div className="contact-container">
+                    <h1>Having troubles,</h1>
+                    <h1>Contact Support</h1>
+                    <form action="">
+                        <select>
+                            <option>Choose an option</option>
+                            <option>Vendor</option>
+                            <option>Agent</option>
+                        </select>
+                        <div className="email">
+                            <FontAwesomeIcon 
+                                icon={faEnvelope} 
+                                color='#BFBFBF'
+                            />
+                            <input type="email" placeholder='Email'/>
+                        </div>
+                        <textarea placeholder='type what you want to enquire'></textarea>
+                            <button type="submit">Send</button>
+                    </form>
                 </div>
             </section>
             <Footer/>

@@ -34,7 +34,11 @@
             display: flex;
             width: 80%;
             margin: 0 auto 42px auto;
-            justify-content: space-between;
+            justify-content: space-evenly;
+
+            & > div:first-of-type{
+                margin-right: 1rem;
+            }
         }
 
         .store-download-btn{
@@ -373,6 +377,7 @@
 
                     input[type='text'], input[type='email']{
                         outline: none;
+                        background: #fff;
                         border: 0;
                         height: 100%;
                         width: 80%;
@@ -463,6 +468,154 @@
             background: #F7F7F7;
             border-radius: 149px;
             margin: auto;
+        }
+    }
+}
+
+#contact{
+    width: 80%;
+    margin: auto;
+    margin-top: 274px;
+    position: relative;
+    // background: url('../assests/contact.svg')  no-repeat;
+    padding-bottom: 191px;
+
+    & > img{
+        position: absolute;
+        top: -100px;
+        left: -100px;
+        z-index: -1;
+        object-fit: contain;
+    }
+
+    h1{
+        font-family: Mulish;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 2rem;
+        line-height: 49px;
+        letter-spacing: 0.015em;
+        color: #F49648;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        width: #{'min(70%, 450px)'};
+
+        .email{
+            display: flex;
+            height: 2.5rem;
+            align-items: center;
+            background: #F9F9F9;
+            padding-left: 1rem;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+        }
+
+        input, textarea, select, button{
+            outline: none;
+        }
+
+        select{
+            border: 0;
+            height: 2.5rem;
+            width: 100%;
+            background-color: #F9F9F9;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-family: Mulish;
+            font-weight: normal;
+            font-size: 1rem;
+            line-height: 39px;
+            letter-spacing: 0.015em;
+            color: #969696;
+            padding-left: 4vw;
+            border-radius: 6px;
+            background-image: url("../assests/arrow-down.svg");
+            background-repeat: no-repeat;
+            background-size: .65em auto;
+            background-position: right 2em top 50%;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+
+            // Hide arrow icon in IE browsers 
+            &::-ms-expand {
+                display: none;
+              }
+        }
+
+        input[type='email']{
+            border: 0;
+            height: 100%;
+            width: 90%;
+            background: transparent;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+            padding-left: 20px;
+            font-family: Mulish;
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 39px;
+            letter-spacing: 0.015em;
+            color: #969696;
+
+            &:focus{
+                background: transparent;
+            }
+
+            &::placeholder{
+                font-family: Mulish;
+                font-weight: 400;
+                font-size: 1rem;
+                letter-spacing: 0.015em;
+                color: #969696;
+              }
+              
+            &:-ms-input-placeholder{
+                font-family: Mulish;
+                font-weight: 400;
+                font-size: 1rem;
+                line-height: 39px;
+                letter-spacing: 0.015em;
+                color: #969696;
+              }
+              
+            &::-ms-input-placeholder{
+                font-family: Mulish;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 39px;
+                letter-spacing: 0.015em;
+                color: #969696;
+              }
+        }
+
+        textarea{
+            background: #F9F9F9;
+            height: 128px;
+            border: 0;
+            padding: 1rem 2rem;
+            margin-bottom: 1rem;
+            font-family: Mulish;
+            font-size: 1rem;
+            letter-spacing: 0.015em;
+            color: #969696;
+        }
+
+        button{
+            background: linear-gradient(180deg, #F12F2E 0%, #F49648 100%);
+            border-radius: 6px;
+            border: 0;
+            width: 191px;
+            height: 2.5rem;
+            font-family: Mulish;
+            font-weight: 100;
+            font-size: 1rem;
+            line-height: 39px;
+            color: #FFFFFF;
+
         }
     }
 }
