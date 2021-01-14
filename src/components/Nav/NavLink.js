@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import styled from 'styled-components'
 import { MenuContext } from '../../context';
+import { Link } from 'react-scroll';
 
 // const close = `
 //     transform: translate3d(0, 0, 0);
@@ -11,6 +12,7 @@ import { MenuContext } from '../../context';
 
 const Wrapper = styled.li`
     margin-right: 30px;
+    cursor: default;
 
     @media screen and (max-width: 768px){
         padding: 20px 10px;
@@ -21,7 +23,8 @@ const Wrapper = styled.li`
     }
 `
 
-const Link = styled.a`
+
+const StyledLink = styled(Link)`
     @media screen and (max-width: 768px){
         font-family: Mulish;
         font-weight: 400;
@@ -39,7 +42,15 @@ const NavLink = ({ href,navLink }) => {
     return (
         <>
             <Wrapper menuToggle={menuToggle}>
-                <Link href={href}>{navLink}</Link>
+                <StyledLink
+                    to={href}
+                    spy='true'
+                    activeClass='active'
+                    smooth={true}
+                    duration={100}
+                >
+                    {navLink}
+                </StyledLink>
             </Wrapper>
         </>
     )

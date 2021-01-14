@@ -6,19 +6,19 @@ const NavLinks = ({ breakPoint,deviceWidth }) => {
     const mobileNavLinksComponent = <>
         <NavLink
             navLink='About' 
-            href='/'
+            href='about'
         />
         <NavLink 
             navLink='How it works' 
-            href='/'
+            href='how-it-works'
         />
         <NavLink 
             navLink='Partner with us' 
-            href='/'
+            href='partner'
         />
         <NavLink
             navLink='Support' 
-            href='/' 
+            href='contact' 
         />
         <NavLink 
             navLink='Download' 
@@ -29,19 +29,19 @@ const NavLinks = ({ breakPoint,deviceWidth }) => {
     const desktopNavLinksComponent = <>
         <NavLink 
             navLink='About' 
-            href='/'
+            href='about'
         />
         <NavLink 
             navLink='How it works' 
-            href='/'
+            href='how-it-works'
         />
         <NavLink 
             navLink='Partner with us' 
-            href='/'
+            href='partner'
         />
         <NavLink 
             navLink='Support' 
-            href='/' 
+            href='contact' 
         />
     </>
 
