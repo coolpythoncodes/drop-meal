@@ -87,8 +87,7 @@ const LandingPage = () => {
 
             <section id="about">
                 <img 
-                    src={ShowcaseImage} 
-                    alt="DropMeal food delivery service in Benin, Nigeria" 
+                    src= {ShowcaseImage}                            alt="DropMeal food delivery service in Benin, Nigeria" 
                     className='showcase-image'
                 />
                 <h1>About DropMeal</h1>

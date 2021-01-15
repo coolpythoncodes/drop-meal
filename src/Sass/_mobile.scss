@@ -47,7 +47,8 @@
     }
 
     #about{
-        justify-content: center;
+        // justify-content: center;
+        
         .showcase-image{
             width: 293px;
             margin-top: -300px;
@@ -290,6 +291,38 @@
     #contact{
         form{
             width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .showcase{
+        height: 80vh;
+        // padding-bottom: 2.5rem;
+
+        &-text{
+            width: 100%;
+
+            h1{
+                // margin-top: 3rem;
+                font-size: 2rem;
+            }
+
+            .store-download-btns{
+                // display: none;
+                
+            }
+        }
+    }
+    #about{
+        width: 90%;
+        
+        .showcase-image{
+            // display: none;
+            width: 80%;
+            object-fit: contain;
+            margin-top: -150px;
+            // margin-bottom: 3rem;
         }
     }
 }

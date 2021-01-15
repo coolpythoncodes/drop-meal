@@ -79,6 +79,8 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 80%;
+    margin: auto;
     // justify-content: center;
 
     .showcase-image{
@@ -104,11 +106,11 @@ html {
     .about-text{
         font-family: Mulish;
         font-weight: 400;
-        font-size: 24px;
-        line-height: 39px;
+        font-size: 1.5rem;
+        line-height: 1.4;
         letter-spacing: 0.015em;
         text-align: center;
-        width: #{"min(80%, 727px)"};
+        // width: #{"min(80%, 727px)"};
     }
 
     .partner-btn{
