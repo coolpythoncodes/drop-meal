@@ -265,6 +265,10 @@
                 form{
                    margin-left: 0;
                    width: 100%;
+
+                   .form-container{
+                       width: 90%;
+                   }
                 }
             }
         }
@@ -308,10 +312,6 @@
                 font-size: 2rem;
             }
 
-            .store-download-btns{
-                // display: none;
-                
-            }
         }
     }
     #about{
