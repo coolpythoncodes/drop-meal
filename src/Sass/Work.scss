@@ -1,0 +1,54 @@
+.work{
+
+    h1{
+        font-family: Mulish;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 25px;
+        letter-spacing: 0.015em;
+        margin: 1rem 0;
+        width: 169px;
+    }
+
+    p{
+        font-family: Mulish;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0.015em;
+        // width: 288px;
+    }
+}
+
+
+@media screen and (max-width: 767px){
+    .work{
+        display: flex;
+        flex-direction: column;
+
+        h1{
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            // width: 140px;
+            width: unset;
+            margin: 1rem auto;
+        }
+
+        p{
+            text-align: center;
+            margin: 21px 0 40px 0;
+            font-size: 1.1rem;
+            line-height: 1.4;
+        }
+    }
+}
+
+@media screen and (max-width: 300px){
+    .work{
+
+        h1{
+            font-size: 16px;
+        }
+    }
+}
