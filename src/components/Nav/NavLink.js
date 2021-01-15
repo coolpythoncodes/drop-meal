@@ -47,7 +47,7 @@ const NavLink = ({ href, navLink, offset }) => {
     // }
     return (
         <>
-            <li menuToggle={menuToggle}>
+            <li className='nav-link' menuToggle={menuToggle}>
                 <Link
                     to={href}
                     spy='true'
