@@ -1,32 +1,33 @@
 import { useContext } from 'react';
-import styled from 'styled-components'
+// import styled from 'styled-components'
+import '../../Sass/NavLinks.scss';
 import { MenuContext } from '../../context';
 import { Link } from 'react-scroll';
 
 
-const Wrapper = styled.li`
-    margin-right: 30px;
-    cursor: pointer;
+// const Wrapper = styled.li`
+//     margin-right: 30px;
+//     cursor: pointer;
 
-    @media screen and (max-width: 768px){
-        padding: 20px 10px;
-        // border-bottom: 1px solid #ccc;
-        // transform: translate3d(-520px, 0, 0);
-        // transition: all 0.5s ease-out;
+//     @media screen and (max-width: 768px){
+//         padding: 20px 10px;
+//         // border-bottom: 1px solid #ccc;
+//         // transform: translate3d(-520px, 0, 0);
+//         // transition: all 0.5s ease-out;
 
-    }
-`
+//     }
+// `
 
 
-const StyledLink = styled(Link)`
-    @media screen and (max-width: 768px){
-        font-family: Mulish;
-        font-weight: 400;
-        line-height: 24px;
-        font-size: 14px; 
-        color:  #F17C22;  
-    }
-`
+// const StyledLink = styled(Link)`
+//     @media screen and (max-width: 768px){
+//         font-family: Mulish;
+//         font-weight: 400;
+//         line-height: 24px;
+//         font-size: 14px; 
+//         color:  #F17C22;  
+//     }
+// `
 
 const NavLink = ({ href, navLink, offset }) => {
     
@@ -46,8 +47,8 @@ const NavLink = ({ href, navLink, offset }) => {
     // }
     return (
         <>
-            <Wrapper menuToggle={menuToggle}>
-                <StyledLink
+            <li menuToggle={menuToggle}>
+                <Link
                     to={href}
                     spy='true'
                     activeClass='active'
@@ -57,8 +58,8 @@ const NavLink = ({ href, navLink, offset }) => {
                     onClick={hideSlideNav}
                 >
                     {navLink}
-                </StyledLink>
-            </Wrapper>
+                </Link>
+            </li>
         </>
     )
 }

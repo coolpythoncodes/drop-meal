@@ -1,0 +1,91 @@
+@import 'config';
+
+footer{
+    padding-bottom: 44px;
+
+    a{
+        font-family: Mulish;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 24px;
+        letter-spacing: 0.015em;
+        color: #8C8C8C;
+    }
+
+    h2{
+        font-family: Mulish;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.015em;
+        margin-bottom: 15px;
+    }
+
+    .footer-container{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-left{
+        margin-right: 2rem;
+
+        & > p:first-of-type{
+            font-family: Mulish;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0.015em;
+            margin-top: 30px;
+        }
+    }
+
+    .footer-logo{
+        display: flex;
+        align-items: center;
+
+        & > h1{
+            font-family: Mulish;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 24px;
+            letter-spacing: 0.015em;
+        }
+    }
+
+    .footer-right{
+        display: flex;
+        justify-content: space-between;
+
+        & > div:first-of-type{
+            margin-right: 90px;
+        }
+    }
+
+}
+
+
+
+@media screen and (max-width: 767px){
+    footer{
+
+        .footer-container{
+            flex-direction: column;
+        }
+
+        .footer-left{
+            margin-top: 1rem;
+        }
+
+        .footer-right{
+            order: -1;
+            justify-self: space-between;
+
+            li{
+                padding: 0;
+
+            }
+        }
+    }
+}
