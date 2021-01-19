@@ -67,9 +67,12 @@ a{
         white-space: nowrap; /* Keeps the content on a single line */
         margin: 0 auto; /* Gives that scrolling effect as the typing happens */
         letter-spacing: .15em; /* Adjust as needed */
-        animation: 
-          typing 3.5s steps(40, end) infinite,
-          blink-caret .75s step-end infinite
+        // animation: 
+        //   typing 3.5s steps(40, end) infinite,
+        //   blink-caret .75s step-end infinite
+
+        animation: animated-text 10s steps(29,end) 1s infinite normal both,
+        animated-cursor 600ms steps(29,end);
     }
 
     .arrow{
@@ -226,145 +229,159 @@ a{
 //     color: #A6A6A6;
 //   }
 
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 60% }
-  }
+//   @keyframes typing {
+//     from { width: 0 }
+//     to { width: 60% }
+//   }
   
   /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
-  }
+//   @keyframes blink-caret {
+//     from, to { border-color: transparent }
+//     50% { border-color: orange; }
+//   }
 
 
-  /* BELL */
+//   /* BELL */
 
-@-webkit-keyframes ring {
-    0% {
-      -webkit-transform: rotate(-15deg);
-      transform: rotate(-15deg);
-    }
+// @-webkit-keyframes ring {
+//     0% {
+//       -webkit-transform: rotate(-15deg);
+//       transform: rotate(-15deg);
+//     }
   
-    2% {
-      -webkit-transform: rotate(15deg);
-      transform: rotate(15deg);
-    }
+//     2% {
+//       -webkit-transform: rotate(15deg);
+//       transform: rotate(15deg);
+//     }
   
-    4% {
-      -webkit-transform: rotate(-18deg);
-      transform: rotate(-18deg);
-    }
+//     4% {
+//       -webkit-transform: rotate(-18deg);
+//       transform: rotate(-18deg);
+//     }
   
-    6% {
-      -webkit-transform: rotate(18deg);
-      transform: rotate(18deg);
-    }
+//     6% {
+//       -webkit-transform: rotate(18deg);
+//       transform: rotate(18deg);
+//     }
   
-    8% {
-      -webkit-transform: rotate(-22deg);
-      transform: rotate(-22deg);
-    }
+//     8% {
+//       -webkit-transform: rotate(-22deg);
+//       transform: rotate(-22deg);
+//     }
   
-    10% {
-      -webkit-transform: rotate(22deg);
-      transform: rotate(22deg);
-    }
+//     10% {
+//       -webkit-transform: rotate(22deg);
+//       transform: rotate(22deg);
+//     }
   
-    12% {
-      -webkit-transform: rotate(-18deg);
-      transform: rotate(-18deg);
-    }
+//     12% {
+//       -webkit-transform: rotate(-18deg);
+//       transform: rotate(-18deg);
+//     }
   
-    14% {
-      -webkit-transform: rotate(18deg);
-      transform: rotate(18deg);
-    }
+//     14% {
+//       -webkit-transform: rotate(18deg);
+//       transform: rotate(18deg);
+//     }
   
-    16% {
-      -webkit-transform: rotate(-12deg);
-      transform: rotate(-12deg);
-    }
+//     16% {
+//       -webkit-transform: rotate(-12deg);
+//       transform: rotate(-12deg);
+//     }
   
-    18% {
-      -webkit-transform: rotate(12deg);
-      transform: rotate(12deg);
-    }
+//     18% {
+//       -webkit-transform: rotate(12deg);
+//       transform: rotate(12deg);
+//     }
   
-    20% {
-      -webkit-transform: rotate(0deg);
-      transform: rotate(0deg);
-    }
+//     20% {
+//       -webkit-transform: rotate(0deg);
+//       transform: rotate(0deg);
+//     }
+//   }
+  
+//   @keyframes ring {
+//     0% {
+//       -webkit-transform: rotate(-15deg);
+//       -ms-transform: rotate(-15deg);
+//       transform: rotate(-15deg);
+//     }
+  
+//     2% {
+//       -webkit-transform: rotate(15deg);
+//       -ms-transform: rotate(15deg);
+//       transform: rotate(15deg);
+//     }
+  
+//     4% {
+//       -webkit-transform: rotate(-18deg);
+//       -ms-transform: rotate(-18deg);
+//       transform: rotate(-18deg);
+//     }
+  
+//     6% {
+//       -webkit-transform: rotate(18deg);
+//       -ms-transform: rotate(18deg);
+//       transform: rotate(18deg);
+//     }
+  
+//     8% {
+//       -webkit-transform: rotate(-22deg);
+//       -ms-transform: rotate(-22deg);
+//       transform: rotate(-22deg);
+//     }
+  
+//     10% {
+//       -webkit-transform: rotate(22deg);
+//       -ms-transform: rotate(22deg);
+//       transform: rotate(22deg);
+//     }
+  
+//     12% {
+//       -webkit-transform: rotate(-18deg);
+//       -ms-transform: rotate(-18deg);
+//       transform: rotate(-18deg);
+//     }
+  
+//     14% {
+//       -webkit-transform: rotate(18deg);
+//       -ms-transform: rotate(18deg);
+//       transform: rotate(18deg);
+//     }
+  
+//     16% {
+//       -webkit-transform: rotate(-12deg);
+//       -ms-transform: rotate(-12deg);
+//       transform: rotate(-12deg);
+//     }
+  
+//     18% {
+//       -webkit-transform: rotate(12deg);
+//       -ms-transform: rotate(12deg);
+//       transform: rotate(12deg);
+//     }
+  
+//     20% {
+//       -webkit-transform: rotate(0deg);
+//       -ms-transform: rotate(0deg);
+//       transform: rotate(0deg);
+//     }
+//   }
+
+/* text animation */
+
+@keyframes animated-text{
+    from{width: 0;}
+    to{width: 170px;}
   }
   
-  @keyframes ring {
-    0% {
-      -webkit-transform: rotate(-15deg);
-      -ms-transform: rotate(-15deg);
-      transform: rotate(-15deg);
-    }
+  /* cursor animations */
   
-    2% {
-      -webkit-transform: rotate(15deg);
-      -ms-transform: rotate(15deg);
-      transform: rotate(15deg);
-    }
-  
-    4% {
-      -webkit-transform: rotate(-18deg);
-      -ms-transform: rotate(-18deg);
-      transform: rotate(-18deg);
-    }
-  
-    6% {
-      -webkit-transform: rotate(18deg);
-      -ms-transform: rotate(18deg);
-      transform: rotate(18deg);
-    }
-  
-    8% {
-      -webkit-transform: rotate(-22deg);
-      -ms-transform: rotate(-22deg);
-      transform: rotate(-22deg);
-    }
-  
-    10% {
-      -webkit-transform: rotate(22deg);
-      -ms-transform: rotate(22deg);
-      transform: rotate(22deg);
-    }
-  
-    12% {
-      -webkit-transform: rotate(-18deg);
-      -ms-transform: rotate(-18deg);
-      transform: rotate(-18deg);
-    }
-  
-    14% {
-      -webkit-transform: rotate(18deg);
-      -ms-transform: rotate(18deg);
-      transform: rotate(18deg);
-    }
-  
-    16% {
-      -webkit-transform: rotate(-12deg);
-      -ms-transform: rotate(-12deg);
-      transform: rotate(-12deg);
-    }
-  
-    18% {
-      -webkit-transform: rotate(12deg);
-      -ms-transform: rotate(12deg);
-      transform: rotate(12deg);
-    }
-  
-    20% {
-      -webkit-transform: rotate(0deg);
-      -ms-transform: rotate(0deg);
-      transform: rotate(0deg);
-    }
+  @keyframes animated-cursor{
+    from{border-right-color: orange;}
+    to{border-right-color: transparent;}
   }
-  
+
   .fa-bell{
     -webkit-animation: ring 2s ease infinite;
     animation: ring 2s ease infinite;
