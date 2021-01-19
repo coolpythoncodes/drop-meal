@@ -215,20 +215,16 @@ a{
     }
 }
 
-::-webkit-input-placeholder, :-ms-input-placeholder, ::placeholder{ /* Edge */
-    font-family: Mulish;
-    font-style: normal;
-    font-weight: normal;
-    // font-size: 2px;
-    line-height: 29px;
-    /* identical to box height, or 211% */
-
-    text-align: center;
-    letter-spacing: 0.015em;
-
-    color: #A6A6A6;
-    color: red;
-  }
+// ::-webkit-input-placeholder, :-ms-input-placeholder, ::placeholder{ /* Edge */
+//     font-family: Mulish;
+//     font-style: normal;
+//     font-weight: normal;
+//     // font-size: 2px;
+//     line-height: 29px;
+//     text-align: center;
+//     letter-spacing: 0.015em;
+//     color: #A6A6A6;
+//   }
 
   @keyframes typing {
     from { width: 0 }
