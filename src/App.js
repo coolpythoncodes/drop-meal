@@ -2,11 +2,13 @@ import LandingPage from './pages/LandingPage';
 import {
 	BrowserRouter as Router,
 } from "react-router-dom";
+import LaunchingPage from './pages/LaunchingPage';
 
 const App = () => {
   return (
     <Router>
-      <LandingPage />
+      <LaunchingPage/>
+      {/* <LandingPage /> */}
     </Router>
   );
 }
