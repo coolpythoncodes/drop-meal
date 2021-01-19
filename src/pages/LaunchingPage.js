@@ -4,7 +4,7 @@ import Logo from '../assests/drop meal logo.png'
 import Arrow from '../assests/timerArrow.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBell } from '@fortawesome/free-solid-svg-icons';
-import { faFacebook, faFacebookF, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faFacebookF, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 const LaunchingPage = () => {
     const Completionist = () => <span>You are good to go!</span>;

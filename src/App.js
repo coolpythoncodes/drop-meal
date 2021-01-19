@@ -1,4 +1,4 @@
-import LandingPage from './pages/LandingPage';
+// import LandingPage from './pages/LandingPage';
 import {
 	BrowserRouter as Router,
 } from "react-router-dom";
