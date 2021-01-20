@@ -360,15 +360,15 @@ a{
   }
 
 // media queries
-// @media screen and (max-width: 400px){
-//   .launching__page{
+@media screen and (max-width: 400px){
+  .launching__page{
 
-//     &Container{
-//       // width: 100%;
-//       border: #000 solid;
-//     }
-//     .email__form{
-
-//     }
-//   }
-// }
+    // &Container{
+    //   // width: 100%;
+    //   border: #000 solid;
+    // }
+    &Timer{
+      height: 65px;
+    }
+  }
+}
