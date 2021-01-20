@@ -1,5 +1,7 @@
+import { useState } from 'react';
 import '../Sass/LaunchingPage.scss';
 import Logo from '../assests/drop meal logo.png'
+import Input from 'react-phone-number-input/input'
 import Arrow from '../assests/timerArrow.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBell } from '@fortawesome/free-solid-svg-icons';
@@ -8,6 +10,7 @@ import { faFacebookF, faInstagram, faTwitter } from '@fortawesome/free-brands-sv
 
 const LaunchingPage = ({ days, hours, minutes, seconds }) => {
 
+    const [value, setValue] = useState('');
     return (
         <div className='launching__page'>
             <div className="launching__pageContainer">
@@ -50,7 +53,15 @@ const LaunchingPage = ({ days, hours, minutes, seconds }) => {
                 <div className="email__form">
                     <p>Hey, lets tell you when we come live!</p>
                     <form>
-                        <input type="email" name="" id="" placeholder='Enter your email to get notified'/>
+                        <Input
+                            country="NG"
+                            // international
+                            placeholder="Enter your phone number"
+                            value={value}
+                            onChange={setValue}
+                            maxlength='11'
+                        />
+                        {/* <input type="email" name="" id="" placeholder='Enter your email to get notified'/> */}
                         <button  type="submit">
                             Notify me 
                             <FontAwesomeIcon 
