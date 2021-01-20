@@ -71,7 +71,7 @@ a{
         //   typing 3.5s steps(40, end) infinite,
         //   blink-caret .75s step-end infinite
 
-        animation: animated-text 10s steps(29,end) 1s infinite normal both,
+        animation: animated-text 8s steps(29,end) 1s infinite normal both,
         animated-cursor 600ms steps(29,end);
     }
 
@@ -372,7 +372,7 @@ a{
 
 @keyframes animated-text{
     from{width: 0;}
-    to{width: 175px;}
+    to{width: 180px;}
   }
   
   /* cursor animations */
