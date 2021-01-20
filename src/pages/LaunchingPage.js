@@ -12,8 +12,9 @@ const LaunchingPage = ({ days, hours, minutes, seconds }) => {
 
     const [value, setValue] = useState('');
     const [deviceWidth, setDeviceWidth] = useState(window.innerWidth);
-    const breakPoint = 767;
+    // const breakPoint = 767;
     const mobileBreakPoint = 400;
+    
     useEffect(() => {
         const handleWindowResize = () => setDeviceWidth(window.innerWidth);
         window.addEventListener('resize', handleWindowResize)
