@@ -207,6 +207,7 @@ a{
 
     .social__links{
         display: flex;
+        justify-content: center;
         align-items: center;
         margin-top: 1rem;
 
@@ -214,6 +215,10 @@ a{
         li{
             margin-right: 2rem;
             list-style: none;
+
+            &:last-child{
+              margin-right: 0;
+            }
         }
     }
 }
