@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, } from 'react';
 import '../Sass/LaunchingPage.scss';
 import Logo from '../assests/drop meal logo.png'
 import Input from 'react-phone-number-input/input'
@@ -11,6 +11,14 @@ import { faFacebookF, faInstagram, faTwitter } from '@fortawesome/free-brands-sv
 const LaunchingPage = ({ days, hours, minutes, seconds }) => {
 
     const [value, setValue] = useState('');
+    const [deviceWidth, setDeviceWidth] = useState(window.innerWidth);
+    const breakPoint = 767;
+    const mobileBreakPoint = 400;
+    useEffect(() => {
+        const handleWindowResize = () => setDeviceWidth(window.innerWidth);
+        window.addEventListener('resize', handleWindowResize)
+        return () => window.removeEventListener('resize', handleWindowResize)
+    }, []);
     return (
         <div className='launching__page'>
             <div className="launching__pageContainer">
@@ -64,11 +72,14 @@ const LaunchingPage = ({ days, hours, minutes, seconds }) => {
                         {/* <input type="email" name="" id="" placeholder='Enter your email to get notified'/> */}
                         <button  type="submit">
                             Notify me 
-                            <FontAwesomeIcon 
+                           {
+                               deviceWidth >= mobileBreakPoint ?
+                                <FontAwesomeIcon 
                                 icon={faBell}
                                 color='#fff'
                                 style={{marginLeft:'5px'}}
-                            />
+                            /> : null
+                           }
                         </button>
                     </form>
                 </div>
