@@ -59,7 +59,7 @@ const LaunchingPage = ({ days, hours, minutes, seconds }) => {
                             placeholder="Enter your phone number"
                             value={value}
                             onChange={setValue}
-                            maxlength='13'
+                            maxLength='13'
                         />
                         {/* <input type="email" name="" id="" placeholder='Enter your email to get notified'/> */}
                         <button  type="submit">

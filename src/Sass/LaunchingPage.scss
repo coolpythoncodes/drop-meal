@@ -6,6 +6,8 @@ a{
     // height: 100vh;
     color: #fff;
     background: linear-gradient(246.05deg, #ED2820 -18.09%, #F12F2F 37.93%, #F49648 72.76%);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
 
     &Container{
         display: flex;
@@ -339,5 +341,16 @@ a{
     transform-origin-z: initial;
   }
   
-// Responsive design
+  // background gradient animation
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 
