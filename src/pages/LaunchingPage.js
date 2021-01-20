@@ -1,40 +1,13 @@
 import '../Sass/LaunchingPage.scss';
-import Countdown from 'react-countdown';
 import Logo from '../assests/drop meal logo.png'
 import Arrow from '../assests/timerArrow.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBell } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookF, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
-const LaunchingPage = () => {
-    const Completionist = () => <span>You are good to go!</span>;
-    const renderer = ({ days, hours, minutes, seconds, completed }) => {
-        if (completed) {
-          // Render a completed state
-          return <Completionist />;
-        } else {
-          // Render a countdown
-          return <div className="launching__pageTimer">
-          <div className="days">
-              <h1>{days}</h1>
-              <small>days</small>
-          </div>
-          <div className="hours">
-              <h1>{hours}</h1>
-              <small>hours</small>
-          </div>
-          <div className="mins">
-              <h1>{minutes}</h1>
-              <small>mins</small>
-          </div>
-          <div className="mins">
-              <h1>{seconds}</h1>
-              <small>secs</small>
-          </div>
-      </div>
-;
-        }
-      };
+
+const LaunchingPage = ({ days, hours, minutes, seconds }) => {
+
     return (
         <div className='launching__page'>
             <div className="launching__pageContainer">
@@ -53,10 +26,24 @@ const LaunchingPage = () => {
 
                 {/* Timer here */}
                 <div className="countdown">
-                    <Countdown
-                        date={Date.now() + 441504000}
-                        renderer={renderer}
-                    />
+                    <div className="launching__pageTimer">
+                        <div className="days">
+                            <h1>{days}</h1>
+                            <small>days</small>
+                        </div>
+                        <div className="hours">
+                            <h1>{hours}</h1>
+                            <small>hours</small>
+                        </div>
+                        <div className="mins">
+                            <h1>{minutes}</h1>
+                            <small>mins</small>
+                        </div>
+                        <div className="mins">
+                            <h1>{seconds}</h1>
+                            <small>secs</small>
+                        </div>
+                    </div>
                 </div>
                 
                 
