@@ -157,11 +157,14 @@ a{
                 margin-right: 5px;
                 outline: 0;
                 border: 0;
-                background: transparent;
                 // border: solid red;
                 font-family: Mulish;
                 color: #A6A6A6;
                 font-size: 16px;
+
+                &:focus, &:active{
+                  background: transparent;
+                }
             }
 
             button{
@@ -369,6 +372,26 @@ a{
     // }
     &Timer{
       height: 65px;
+    }
+  }
+}
+
+@media screen and (min-width: 767px){
+  .launching__page{
+
+    // &Container{
+    //   // width: 100%;
+    //   border: #000 solid;
+    // }
+    &Timer{
+      
+      h1{
+        font-size: 36px;
+      }
+
+      small{
+        font-size: 18px;
+      }
     }
   }
 }
