@@ -6,6 +6,7 @@ import Arrow from '../assests/timerArrow.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBell } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookF, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import PopUp from '../components/PopUp';
 
 
 const LaunchingPage = ({ days, hours, minutes, seconds }) => {
@@ -14,7 +15,7 @@ const LaunchingPage = ({ days, hours, minutes, seconds }) => {
     const [deviceWidth, setDeviceWidth] = useState(window.innerWidth);
     // const breakPoint = 767;
     const mobileBreakPoint = 400;
-    
+
     useEffect(() => {
         const handleWindowResize = () => setDeviceWidth(window.innerWidth);
         window.addEventListener('resize', handleWindowResize)
@@ -22,6 +23,7 @@ const LaunchingPage = ({ days, hours, minutes, seconds }) => {
     }, []);
     return (
         <div className='launching__page'>
+            <PopUp />
             <div className="launching__pageContainer">
                 <div className="logo">
                     <img src={Logo} alt="drop meal logo"/>
