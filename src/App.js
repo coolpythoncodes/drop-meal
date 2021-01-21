@@ -12,6 +12,7 @@ import { useState } from 'react';
 const App = () => {
   const [launchDate,] =useState(new Date(2021,1,1))
   const time = firebase.getServerTime()
+  
   // Render LandingPage
 const Completionist = () => <LandingPage />
 

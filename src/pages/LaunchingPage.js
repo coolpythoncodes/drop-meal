@@ -6,13 +6,8 @@ import Arrow from '../assests/timerArrow.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBell } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookF, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
-<<<<<<< HEAD
-import PopUp from '../components/PopUp';
-
-=======
 import firebase from "./../database/firebase"
 import PopUp from '../components/popup';
->>>>>>> d9e5364bc8a500b6856f2833d9895e2dd8583e29
 
 const LaunchingPage = ({ days, hours, minutes, seconds }) => {
 
@@ -23,9 +18,6 @@ const LaunchingPage = ({ days, hours, minutes, seconds }) => {
     const [deviceWidth, setDeviceWidth] = useState(window.innerWidth);
     // const breakPoint = 767;
     const mobileBreakPoint = 400;
-<<<<<<< HEAD
-
-=======
     const onSubmit =(e)=>{
         e.preventDefault()
         setLoading(true)
@@ -58,7 +50,6 @@ const LaunchingPage = ({ days, hours, minutes, seconds }) => {
             setMessage('Opps something went wrong with the form.')
         })
     }
->>>>>>> d9e5364bc8a500b6856f2833d9895e2dd8583e29
     useEffect(() => {
         const handleWindowResize = () => setDeviceWidth(window.innerWidth);
         window.addEventListener('resize', handleWindowResize)
@@ -66,11 +57,7 @@ const LaunchingPage = ({ days, hours, minutes, seconds }) => {
     }, []);
     return (
         <div className='launching__page'>
-<<<<<<< HEAD
-            <PopUp />
-=======
 
->>>>>>> d9e5364bc8a500b6856f2833d9895e2dd8583e29
             <div className="launching__pageContainer">
                 <div className="logo">
                     <img src={Logo} alt="drop meal logo"/>
