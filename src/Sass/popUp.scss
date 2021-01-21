@@ -97,24 +97,6 @@
 				letter-spacing: 0.015em;
 				color: #090909;
 				text-align: center;
-
-				// &:first-child{
-				//   padding-top: 34px;
-				// }
-
-				// &:last-child {
-				// 	font-family: Mulish;
-				// 	font-style: normal;
-				// 	font-weight: bold;
-				// 	font-size: 14px;
-				// 	line-height: 22px;
-				// 	/* or 157% */
-
-				// 	text-align: center;
-				// 	letter-spacing: 0.015em;
-
-				// 	color: #0074df;
-				// }
 			}
 
 			.popup__boxFooter {
@@ -138,106 +120,87 @@
 
 // Media Queries
 
-// @media screen and (max-width: 280px){
+@media screen and (max-width: 500px){
+  .popup{
 
-// .popups{
-//     position: absolute;
-//     height: 100vh;
-//     width: 100%;
-//     background: rgba(19, 19, 19, 0.5);
-//     z-index: 999999999;
-//     justify-content: center;
-//     align-items: center;
-//     display: flex;
+    &__box{
 
-//     div{
+      &Header{
 
-//         // height: 300px;
-//         // padding: 20px;
-//         // min-width:767px ;
-//         // width: 767px ;
-//         // background: #fff;
-//         // border-radius: 10px;
-//         // position: relative;
-//         // justify-content: center;
-//         // align-items: center;
-//         // display: flex;
+        h1{
+          padding-left: 27px;
+          font-size: 36px;
+          line-height: 32px;
+        }
+      }
 
-//         button{
-//             position: absolute;
-//             right: -12px;
-//             top: -12px;
-//             height: 24px;
-//             width: 24px;
-//             border: none;
-//             outline: none;
-//             border-radius: 50%;
-//             background: #F02D2A;
-//             box-shadow: 0px 0px 3px #00001f4f;
-//             justify-content: center;
-//             align-items: center;
+      &Body{
 
-//         }
-//         p{
-//           padding: 20px;
-//           width: 90%;
-//         }
-//     }
-// }
+        .message__one, .message__two{
+          width: 90%;
 
-// // media queries
+          p{
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
 
-// @media screen and (max-width: 768px){
-//   .popups{
+@media screen and (max-width: 320px){
+  .popup{
 
-//     // &Container{
-//     //   // width: 100%;
-//     //   border: #000 solid;
-//     // }
-//     div{
-//       width: 90%;
-//       min-width:370px
-//     }
-//   }
-// }
+    &__box{
 
-// @media screen and (max-width: 375px){
-//     .popups{
+      button{
+        top: -20px;
+        right: -15px;
+        width: 40px;
+        height: 40px;
 
-//       // &Container{
-//       //   // width: 100%;
-//       //   border: #000 solid;
-//       // }
-//       div{
-//         width: 90%;
-//         min-width:300px
-//       }
-//     }
-//   }
-//   @media screen and (max-width: 320px){
-//     .popups{
+        img{
+          width: 13px;
+          object-fit: contain;
+        }
+      }
 
-//       // &Container{
-//       //   // width: 100%;
-//       //   border: #000 solid;
-//       // }
-//       div{
-//         width: 90%;
-//         min-width:280px
-//       }
-//     }
-//   }
+      &Header{
 
-//   @media screen and (max-width: 280px){
-//     .popups{
+        img{
+          width: 100px;
+        }
+      }
+    }
+  }
+}
 
-//       // &Container{
-//       //   // width: 100%;
-//       //   border: #000 solid;
-//       // }
-//       div{
-//         width: 90%;
-//         min-width:250px
-//       }
-//     }
-//   }
+@media screen and (max-width: 280px){
+  .popup{
+
+    &__box{
+
+      &Header{
+
+        h1{
+          font-size: 2rem;
+        }
+
+        img{
+          width: 90px;
+        }
+      }
+
+      &Body{
+        padding-top: 20px;
+
+        .message__one, .message__two{
+
+          p{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

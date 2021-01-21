@@ -25,7 +25,8 @@ const PopUp = ({ message, color, setMessage }) => {
                             </div>
                             <div className="popup__boxBody">
                                 <div className="message__one">
-                                    <p>You’d be among the first to know when this meal is served!</p>
+                                    <p style={{color:color}}>{message}</p>
+                                    {/* <p>You’d be among the first to know when this meal is served!</p> */}
                                 </div>
                                 <div className="message__two">
                                     <p>One more thing...follow us on our socials for more tasty Promos and Discounts</p>
