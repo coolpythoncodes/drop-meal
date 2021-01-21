@@ -17,7 +17,7 @@ const LaunchingPage = ({ days, hours, minutes, seconds }) => {
     const [color, setColor]=useState('red')
     const [deviceWidth, setDeviceWidth] = useState(window.innerWidth);
     // const breakPoint = 767;
-    const mobileBreakPoint = 400;
+    const mobileBreakPoint = 280;
     const onSubmit =(e)=>{
         e.preventDefault()
         setLoading(true)
@@ -103,7 +103,7 @@ const LaunchingPage = ({ days, hours, minutes, seconds }) => {
                         <Input
                             country="NG"
                             // international
-                            placeholder="Enter your phone number"
+                            placeholder="E.g 0812345668"
                             value={value}
                             onChange={setValue}
                             maxLength='13'
@@ -114,7 +114,7 @@ const LaunchingPage = ({ days, hours, minutes, seconds }) => {
                             <button  type="submit">
                                 Notify me 
                             {
-                                deviceWidth >= mobileBreakPoint ?
+                                deviceWidth > mobileBreakPoint ?
                                     <FontAwesomeIcon 
                                     icon={faBell}
                                     color='#fff'
