@@ -51,7 +51,7 @@ const LaunchingPage = ({ days, hours, minutes, seconds }) => {
                     setColor('green')
                     setHeaderMessage('Tastily done!')
                     setError('false')
-                    setMessage('Your phone number has been recieved. Be sure to get notified went DropMeal comes Live..')
+                    setMessage('Your phone number has been recieved. Be sure to get notified when DropMeal comes Live..')
                 }
                 setLoading(false)
 
