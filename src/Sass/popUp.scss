@@ -14,10 +14,10 @@
 		right: 0;
 		bottom: 0;
 		margin: auto;
-		width: #{"min(458px,80%)"};
+		width: #{"min(300px,80%)"};
 		height: 419px;
 		z-index: 99999;
-    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
+		box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
 
 		button {
 			position: absolute;
@@ -60,33 +60,33 @@
 		}
 
 		&Body {
-      background: #ffffff;
-      padding-top: 34px;
-      border-bottom-left-radius: 15px;
-      border-bottom-right-radius: 15px;
+			background: #ffffff;
+			padding-top: 34px;
+			border-bottom-left-radius: 15px;
+			border-bottom-right-radius: 15px;
 
 			.message__one {
-        width: 341px;
-        margin: auto;
-        border-bottom: 1px solid #b2daff;
-        padding-bottom: 13px;
-        margin-bottom: 22px;
-        
-        p{
-          width: 80%;
-          margin: auto;
-        }
-      }
-      
-      .message__two{
-        width: 341px;
-        margin: auto;
+				width: 341px;
+				margin: auto;
+				border-bottom: 1px solid #b2daff;
+				padding-bottom: 13px;
+				margin-bottom: 22px;
 
-        p{
-          width: 80%;
-          margin: auto;
-        }
-      }
+				p {
+					width: 80%;
+					margin: auto;
+				}
+			}
+
+			.message__two {
+				width: 341px;
+				margin: auto;
+
+				p {
+					width: 80%;
+					margin: auto;
+				}
+			}
 
 			p {
 				font-family: Mulish;
@@ -101,17 +101,16 @@
 
 			.popup__boxFooter {
 				display: flex;
-        justify-content: center;
-        margin-top: 25px;
-        padding-bottom: 33px;
-        
+				justify-content: center;
+				margin-top: 25px;
+				padding-bottom: 33px;
 
 				li {
-          margin-right: 25px;
-          
-          &:last-child{
-            margin-right: 0;
-          }
+					margin-right: 25px;
+
+					&:last-child {
+						margin-right: 0;
+					}
 				}
 			}
 		}
@@ -119,88 +118,88 @@
 }
 
 // Media Queries
+@media screen and (min-width: 450px) {
 
-@media screen and (max-width: 500px){
-  .popup{
+	.popup {
 
-    &__box{
-
-      &Header{
-
-        h1{
-          padding-left: 27px;
-          font-size: 36px;
-          line-height: 32px;
-        }
-      }
-
-      &Body{
-
-        .message__one, .message__two{
-          width: 90%;
-
-          p{
-            font-size: 12px;
-          }
-        }
-      }
-    }
-  }
+    &__box {
+			width: #{"min(70%, 458px)"};
+		}
+	}
 }
 
-@media screen and (max-width: 320px){
-  .popup{
+@media screen and (max-width: 500px) {
+	.popup {
+		&__box {
+			&Header {
+				h1 {
+					padding-left: 27px;
+					font-size: 36px;
+					line-height: 32px;
+				}
+			}
 
-    &__box{
+			&Body {
+				.message__one,
+				.message__two {
+					width: 90%;
 
-      button{
-        top: -20px;
-        right: -15px;
-        width: 40px;
-        height: 40px;
-
-        img{
-          width: 13px;
-          object-fit: contain;
-        }
-      }
-
-      &Header{
-
-        img{
-          width: 100px;
-        }
-      }
-    }
-  }
+					p {
+						font-size: 12px;
+					}
+				}
+			}
+		}
+	}
 }
 
-@media screen and (max-width: 280px){
-  .popup{
+@media screen and (max-width: 320px) {
+	.popup {
+		&__box {
+			button {
+				top: -20px;
+				right: -15px;
+				width: 40px;
+				height: 40px;
 
-    &__box{
+				img {
+					width: 13px;
+					object-fit: contain;
+				}
+			}
 
-      &Header{
+			&Header {
+				img {
+					width: 100px;
+				}
+			}
+		}
+	}
+}
 
-        h1{
-          font-size: 2rem;
-        }
+@media screen and (max-width: 280px) {
+	.popup {
+		&__box {
+			&Header {
+				h1 {
+					font-size: 2rem;
+				}
 
-        img{
-          width: 90px;
-        }
-      }
+				img {
+					width: 90px;
+				}
+			}
 
-      &Body{
-        padding-top: 20px;
+			&Body {
+				padding-top: 20px;
 
-        .message__one, .message__two{
-
-          p{
-            width: 100%;
-          }
-        }
-      }
-    }
-  }
+				.message__one,
+				.message__two {
+					p {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
 }

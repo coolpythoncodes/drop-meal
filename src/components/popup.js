@@ -6,7 +6,7 @@ import TwitterIcon from '../assests/twitter.png';
 import '../Sass/popUp.scss';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faTimes } from '@fortawesome/free-solid-svg-icons';
-const PopUp = ({ message, color, setMessage }) => {
+const PopUp = ({ message, color, setMessage, headerMessage }) => {
     const close = () => {
         setMessage('')
     }
@@ -20,7 +20,7 @@ const PopUp = ({ message, color, setMessage }) => {
                                 <img src={CancelIcon} alt="" />
                             </button>
                             <div className="popup__boxHeader">
-                                <h1>Tastily done!</h1>
+                                <h1>{headerMessage}</h1>
                                 <img src={DrinkIcon} alt="" />
                             </div>
                             <div className="popup__boxBody">
