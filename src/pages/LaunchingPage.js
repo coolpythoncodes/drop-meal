@@ -80,7 +80,7 @@ const LaunchingPage = ({ days, hours, minutes, seconds }) => {
                     headerMessage={headerMessage}
                 />
                 <ReactTypingEffect
-                    text={["Sweetness is coming", "Speed is coming", "Ease is coming"]}
+                    text={["Sweetness is coming...", "Speed is coming...", "Ease is coming..."]}
                     cursorClassName='typing__cursor'
                     displayTextRenderer={(text, i) => {
                         return (
