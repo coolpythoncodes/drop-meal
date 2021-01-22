@@ -15,6 +15,7 @@ import PopUp from '../components/popup';
 const LaunchingPage = ({ days, hours, minutes, seconds }) => {
 
     const [value, setValue] = useState('');
+    const [error, setError] = useState(false);
     const [loading, setLoading] = useState(false)
     const [message, setMessage] = useState('')
     const [headerMessage, setHeaderMessage] = useState('');
@@ -33,6 +34,7 @@ const LaunchingPage = ({ days, hours, minutes, seconds }) => {
             setLoading(false)
             setColor('red')
             setHeaderMessage('Opps!!')
+            setError('true')
             setMessage('Incorrect phone number was entered. Please enter a valid phone number.')
             return
         }
@@ -41,12 +43,14 @@ const LaunchingPage = ({ days, hours, minutes, seconds }) => {
                 if (!mes) {
                     setColor('red')
                     setHeaderMessage('Opps!!')
+                    setError('true')
                     setMessage('You have already subscribed to be notified before..')
                 }
                 else {
                     setValue('')
                     setColor('green')
                     setHeaderMessage('Tastily done!')
+                    setError('false')
                     setMessage('Your phone number has been recieved. Be sure to get notified went DropMeal comes Live..')
                 }
                 setLoading(false)
@@ -58,6 +62,7 @@ const LaunchingPage = ({ days, hours, minutes, seconds }) => {
                 setLoading(false)
                 setColor('red')
                 setHeaderMessage('Opps!!')
+                setError('true')
                 setMessage('Opps something went wrong with the form.')
             })
     }
@@ -78,6 +83,7 @@ const LaunchingPage = ({ days, hours, minutes, seconds }) => {
                     color={color}
                     message={message}
                     headerMessage={headerMessage}
+                    error={error}
                 />
                 <ReactTypingEffect
                     text={["Sweetness is coming...", "Speed is coming...", "Ease is coming..."]}
