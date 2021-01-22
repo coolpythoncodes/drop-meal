@@ -2,6 +2,11 @@ a {
 	color: #fff;
 }
 
+.typing__cursor{
+	color: orange;
+	font-size: 25px;
+  }
+
 .launching__page {
 	position: relative;
 	color: #fff;
@@ -68,19 +73,6 @@ a {
 		font-size: 14px;
 		line-height: 1.4;
 		letter-spacing: 0.015em;
-		// width: 198px;
-		// Typing effect
-		overflow: hidden; /* Ensures the content is not revealed until the animation */
-		border-right: 0.15em solid orange; /* The typwriter cursor */
-		white-space: nowrap; /* Keeps the content on a single line */
-		margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-		letter-spacing: 0.15em; /* Adjust as needed */
-		// animation:
-		//   typing 3.5s steps(40, end) infinite,
-		//   blink-caret .75s step-end infinite
-
-		animation: animated-text 8s steps(29, end) 1s infinite normal both,
-			animated-cursor 600ms steps(29, end);
 	}
 
 	.arrow {
@@ -328,28 +320,6 @@ a {
 		-webkit-transform: rotate(0deg);
 		-ms-transform: rotate(0deg);
 		transform: rotate(0deg);
-	}
-}
-
-/* text animation */
-
-@keyframes animated-text {
-	from {
-		width: 0;
-	}
-	to {
-		width: 180px;
-	}
-}
-
-/* cursor animations */
-
-@keyframes animated-cursor {
-	from {
-		border-right-color: orange;
-	}
-	to {
-		border-right-color: transparent;
 	}
 }
 

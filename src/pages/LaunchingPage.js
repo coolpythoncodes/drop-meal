@@ -1,4 +1,5 @@
 import { useState, useEffect, } from 'react';
+import ReactTypingEffect from 'react-typing-effect';
 import '../Sass/LaunchingPage.scss';
 import Logo from '../assests/drop meal logo.png'
 import Input from 'react-phone-number-input/input'
@@ -72,13 +73,30 @@ const LaunchingPage = ({ days, hours, minutes, seconds }) => {
                 <div className="logo">
                     <img src={Logo} alt="drop meal logo" />
                 </div>
-                <PopUp 
-                    setMessage={setMessage} 
-                    color={color} 
-                    message={message} 
+                <PopUp
+                    setMessage={setMessage}
+                    color={color}
+                    message={message}
                     headerMessage={headerMessage}
                 />
-                <small className='sweetness'>Sweetness is coming...</small>
+                <ReactTypingEffect
+                    text={["Sweetness is coming", "Speed is coming", "Ease is coming"]}
+                    cursorClassName='typing__cursor'
+                    displayTextRenderer={(text, i) => {
+                        return (
+                            <small className="sweetness">
+                                {text.split('').map((char, i) => {
+                                    const key = `${i}`;
+                                    return (
+                                        <span
+                                            key={key}
+                                        >{char}</span>
+                                    );
+                                })}
+                            </small>
+                        );
+                    }}
+                />
 
                 <h1 className='launching__pageHeader'>Welcome to DropMeal</h1>
                 <p>No. 1 Online Food Service Platform in your city.</p>
