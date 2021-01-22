@@ -3,6 +3,7 @@ import CancelIcon from '../assests/cancel.png';
 import FacebookIcon from '../assests/facebook.png';
 import InstagramIcon from '../assests/instagram.png';
 import TwitterIcon from '../assests/twitter.png';
+import 'animate.css/animate.css'
 import '../Sass/popUp.scss';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faTimes } from '@fortawesome/free-solid-svg-icons';
@@ -15,7 +16,7 @@ const PopUp = ({ message, color, setMessage, headerMessage }) => {
             {
                 message !== '' ?
                     <div className='popup'>
-                        <div className='popup__box'>
+                        <div className='popup__box animate__animated animate__bounceIn'>
                             <button onClick={close}>
                                 <img src={CancelIcon} alt="" />
                             </button>
