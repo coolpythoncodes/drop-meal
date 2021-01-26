@@ -16,6 +16,7 @@ import TermsAndConditions from './pages/termsAndCondition';
 const App = () => {
   const [launchDate,] =useState(new Date(2021,1,1))
   const time = firebase.getServerTime()
+  
   // Render LandingPage
 const Completionist = () => <LandingPage />
 

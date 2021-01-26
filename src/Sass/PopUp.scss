@@ -1,0 +1,23 @@
+.popup{
+    // content: '';
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: #{"min(80%, 458px)"};
+    height: fit-content;
+    z-index: 99999;
+
+    &__header{
+        display: flex;
+        align-items: center;
+        background: linear-gradient(246.05deg, #ED2820 -18.09%, #F12F2F 37.93%, #F49648 72.76%);
+        border-radius: 15px 15px 0px 0px;
+
+        img{
+            margin-left: auto;
+        }
+    }
+}
