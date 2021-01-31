@@ -1,11 +1,15 @@
 import LandingPage from './pages/LandingPage';
 import {
   BrowserRouter as Router,
+  Switch,
+  Route
 } from "react-router-dom";
 import LaunchingPage from './pages/LaunchingPage';
 import Countdown from 'react-countdown';
 import firebase from "./database/firebase"
 import { useState } from 'react';
+import Privacy from './pages/privacy';
+import TermsAndConditions from './pages/termsAndCondition';
 
 
 
@@ -34,10 +38,20 @@ const App = () => {
   };
   return (
     <Router>
-      <Countdown
-        date={Date.now() + (launchDate.getTime() - time * 1000)}
-        renderer={renderer}
-      />
+        <Switch>
+        <Route path="/terms-and-condition">
+            <TermsAndConditions />
+          </Route>
+          <Route path="/privacy-policy">
+            <Privacy />
+          </Route>
+          <Route path="/">
+              <Countdown
+              date={Date.now()+(launchDate.getTime()-time*1000)}
+              renderer={renderer}
+            />
+          </Route>
+        </Switch>
     </Router>
   );
 }
