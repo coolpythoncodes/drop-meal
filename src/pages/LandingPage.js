@@ -12,6 +12,7 @@ import UserIcon from '../assests/user-icon.svg';
 import EmailIcon from '../assests/email_icon.svg';
 import Button from '../components/Button/Button';
 // import MenuContextProvider from '../context';
+import CocacolaIcon from '../assests/coke.png'
 import { MenuContext } from '../context';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons';
@@ -59,6 +60,7 @@ const LandingPage = () => {
                             backgroundColor='#fff'
                             width={`${deviceWidth <= mobileBreakPoint ? '136' :'186' }`}
                             borderRadius='32'
+                            href='https://play.google.com/store/apps/details?id=com.dropmealngr'
                         >
                             <div className='store-download-btn' >
                                 <img className='store-image' src={AppStoreImage} alt="" />
@@ -72,11 +74,12 @@ const LandingPage = () => {
                             backgroundColor='#fff'
                             width={`${deviceWidth <= mobileBreakPoint ? '136' :'186' }`}
                             borderRadius='32'
+                            href='/'
                         >
                             <div className='store-download-btn'>
                                 <img className='store-image' src={PlayStoreImage} alt="" />
                                 <div>
-                                    <p className='first-text'>Download on the</p>
+                                    <p className='first-text'>Coming soon on</p>
                                     <p className='second-text'>Applestore</p>
                                 </div>
                             </div>
@@ -104,8 +107,7 @@ const LandingPage = () => {
                     borderColor='#0167C8'
                     internalLink
                     href='partner'
-                    offset={-80}
-                    
+                    offset={-80}    
                 >
                     <div className="partner-btn">
                         <p>Partner with us</p>
@@ -131,7 +133,7 @@ const LandingPage = () => {
                 </div>
                 <div className="pay-once-info">
                     <h1>Pay once buy anytime</h1>
-                    <p className='pay-one-text'>Introducing our online payment platform with it’s flexible wallet. DropPay wallet allows you to credit your wallet and make payment anytime you want, no card stress, no delay, just load and pay. Sweeeeet! It’s that easy, click the link below to try now!</p>
+                    <p className='pay-one-text'>Plan your monthly feeding budget and stick to it with our Drop pay feature. Fund your wallet whenever and make payments with ease when you need to. Now you can eat what you want, when you want and pay how you want. DropMeal is for YOU!</p>
                     <div className="button-container" >
                         <Button
                             backgroundColor='#000'
@@ -140,6 +142,7 @@ const LandingPage = () => {
                             height='52'
                             borderRadius='32'
                             marginRight='16'
+                            href='https://play.google.com/store/apps/details?id=com.dropmealngr'
                         >
                             <div className='store-download-btn'>
                                 <img className='store-image' src={AppStoreImageWhite} alt="" />
@@ -155,11 +158,12 @@ const LandingPage = () => {
                              width={`${deviceWidth <= mobileBreakPoint ? '136' :'186' }`}
                              height='52'
                              borderRadius='32'
+                             href='/'
                         >
                             <div className='store-download-btn'>
                                 <img className='store-image' src={PlayStoreImage} alt="" />
                                 <div>
-                                    <p className='first-text'>Download on the</p>
+                                    <p className='first-text'>Coming soon on</p>
                                     <p className='second-text'>Applestore</p>
                                 </div>
                             </div>
@@ -208,7 +212,9 @@ const LandingPage = () => {
                 <div className="partners-container">
                     <h1>Meet our awesome partners</h1>
                     <div className="partners">
-                        
+                        <img src={CocacolaIcon} alt=""/>
+                        <img src={CocacolaIcon} alt=""/>
+                        <img src={CocacolaIcon} alt=""/>
                     </div>
                 </div>
             </section>

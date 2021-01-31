@@ -23,11 +23,11 @@ const NavLinks = ({ breakPoint,deviceWidth }) => {
             href='contact'
             offset={-150} 
         />
-        <NavLink 
+        {/* <NavLink 
             navLink='Download' 
             href='/' 
             
-        />
+        /> */}
     </>
 
     const desktopNavLinksComponent = <>

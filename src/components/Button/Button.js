@@ -88,6 +88,7 @@ const Button = ({
                      border={border}
                      borderColor={borderColor}
                      marginRight={marginRight}
+                     href = {href}
                 >
                     <Text>{children}</Text>
                 </Wrapper>
