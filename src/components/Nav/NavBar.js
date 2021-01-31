@@ -205,6 +205,7 @@ const NavBar = ({ children }) => {
                                 width='163'
                                 height='44'
                                 borderRadius='22'
+                                href='https://play.google.com/store/apps/details?id=com.dropmealngr'
                             >
                                 Download Now
                         </Button>

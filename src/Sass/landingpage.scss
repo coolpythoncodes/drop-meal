@@ -471,11 +471,19 @@ html {
         }
 
         .partners{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
             width: #{'min(100%, 1104px)'};
             height: 298px;
             background: #F7F7F7;
             border-radius: 149px;
             margin: auto;
+            overflow: hidden;
+
+            img{
+                width: 150px;
+            }
         }
     }
 }

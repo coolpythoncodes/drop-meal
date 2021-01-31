@@ -14,28 +14,28 @@ import TermsAndConditions from './pages/termsAndCondition';
 
 
 const App = () => {
-  const [launchDate,] =useState(new Date(2021,1,1))
+  const [launchDate,] = useState(new Date(2021, 1, 1))
   const time = firebase.getServerTime()
-  
+
   // Render LandingPage
-const Completionist = () => <LandingPage />
+  const Completionist = () => <LandingPage />
 
-const renderer = ({ days, hours, minutes, seconds }) => {
+  const renderer = ({ days, hours, minutes, seconds }) => {
 
-  // const today = new Date(settings.s)
-  if (time*1000>launchDate.getTime()) {
-    // Render the LandingPage
-    return <Completionist />;
-  } else {
-    // Render a countdown
-    return <LaunchingPage
-              days={days}
-              hours={hours}
-              minutes={minutes}
-              seconds={seconds}
-            />
-  }
-};
+    // const today = new Date(settings.s)
+    if (time * 1000 > launchDate.getTime()) {
+      // Render the LandingPage
+      return <Completionist />;
+    } else {
+      // Render a countdown
+      return <LaunchingPage
+        days={days}
+        hours={hours}
+        minutes={minutes}
+        seconds={seconds}
+      />
+    }
+  };
   return (
     <Router>
         <Switch>
