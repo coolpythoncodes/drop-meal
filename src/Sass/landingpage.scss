@@ -86,6 +86,8 @@ html {
 
     .showcase-image{
         margin-top: -500px;
+        // width: 80%;
+        // border: solid red;
     }
         
     h1{
@@ -96,7 +98,7 @@ html {
         letter-spacing: 0.015em;
         color: #F49648;
         margin-bottom: 37px;
-        // margin-top: 50px;
+        margin-top: 50px;
 
         &+p {
             margin-bottom: 2rem;

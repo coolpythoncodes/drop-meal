@@ -12,7 +12,7 @@ import UserIcon from '../assests/user-icon.svg';
 import EmailIcon from '../assests/email_icon.svg';
 import Button from '../components/Button/Button';
 // import MenuContextProvider from '../context';
-import CocacolaIcon from '../assests/coke.png';
+import Partner2 from '../assests/partner2.jpeg';
 import Steph from '../assests/STEPH.png';
 import { MenuContext } from '../context';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -213,9 +213,8 @@ const LandingPage = () => {
                 <div className="partners-container">
                     <h1>Meet our awesome partners</h1>
                     <div className="partners">
-                        <img src={Steph} alt=""/>
-                        <img src={CocacolaIcon} alt=""/>
-                        <img src={CocacolaIcon} alt=""/>
+                        <img src={Steph} alt="dropmeal partners"/>
+                        <img src={Partner2} alt=""/>
                     </div>
                 </div>
             </section>
