@@ -39,7 +39,7 @@ const App = () => {
   };
   return (
     <Router>
-        <ScrollToTop />
+        <ScrollToTop>
         <Switch>
         <Route path="/terms-and-condition">
             <TermsAndConditions />
@@ -54,6 +54,7 @@ const App = () => {
             />
           </Route>
         </Switch>
+      </ScrollToTop>
     </Router>
   );
 }
