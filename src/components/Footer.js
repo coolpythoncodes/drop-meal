@@ -1,5 +1,6 @@
 import '../Sass/Footer.scss'
 import Logo from '../assests/drop meal logo.png'
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
 
@@ -15,7 +16,7 @@ const Footer = () => {
                         <h1>DropMeal</h1>
                     </div>
                     <p>Copyright {getCurrentYear()} DropMeal All rights reserved</p>
-                    <p style={{ color: '#8C8C8C' }}><a href="/">Terms of service</a> | <a href="/">Privacy Policy</a></p>
+                    <p style={{ color: '#8C8C8C' }}><Link to="/terms-and-condition">Terms of service</Link> | <Link to="/privacy-policy">Privacy Policy</Link></p>
                 </div>
                 <div className='footer-right'>
                     <div>
