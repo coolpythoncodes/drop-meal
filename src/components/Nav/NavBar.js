@@ -91,7 +91,7 @@ const Wrapper = styled.div`
     }
 `
 
-const Logo = styled.div`
+const Logo = styled.a`
     display: flex;
     align-items: center;
     margin-right: 1rem;
@@ -189,7 +189,9 @@ const NavBar = ({ children }) => {
 
             <Wrapper>
                 {/* <Container> */}
-                    <Logo>
+                    <Logo
+                        href='/'
+                    >
                         <img src={LogoImage} alt=""/>
                         <LogoText>DropMeal</LogoText>
                     </Logo>
