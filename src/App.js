@@ -10,6 +10,7 @@ import firebase from "./database/firebase"
 import { useState } from 'react';
 import Privacy from './pages/privacy';
 import TermsAndConditions from './pages/termsAndCondition';
+import ScrollToTop from './components/ScrollToTop';
 
 
 
@@ -38,6 +39,7 @@ const App = () => {
   };
   return (
     <Router>
+        <ScrollToTop />
         <Switch>
         <Route path="/terms-and-condition">
             <TermsAndConditions />
