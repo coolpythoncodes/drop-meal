@@ -35,7 +35,7 @@ const TermsAndConditions = () => {
                             }
                         </NavBar>
                 {/* </MenuContextProvider> */}
-                <div style={{width:'75%', margin:'auto', marginBottom:100, marginTop:100}}>
+                <div style={{width:'75%', margin:'auto', marginBottom:100, marginTop:100, height:'45vh'}}>
                     <p>DropMeal does not make refund after payment is made. We hold the absolute power to change the price of items as the price of food changes depending on external factors</p>
                 </div>
             </section>
