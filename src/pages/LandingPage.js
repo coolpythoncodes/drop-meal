@@ -95,6 +95,7 @@ const LandingPage = () => {
                     className='showcase-image'
                 />
                 <h1>About DropMeal</h1>
+                
                 <p className="about-text">We at DropMeal tasked ourselves with making convienient food delivery. We took the extra work to making sure you get meals just as fresh and warm as it should be.</p>
                 <p className="about-text">Our extra service include helping food vendors as well, to deliver to their clients. This delivery service is strictly for food vendors as our service deals with food.</p>
 
